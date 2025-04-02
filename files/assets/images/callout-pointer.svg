@@ -1,0 +1,10 @@
+<svg id="callout-pointer" xmlns="http://www.w3.org/2000/svg" width="32.746" height="10.035" viewBox="0 0 32.746 10.035">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006e74;
+      }
+    </style>
+  </defs>
+  <path id="Path_39789" data-name="Path 39789" class="cls-1" d="M11.233.37c2.6,0,1.953,3.892,6.081,6.4s10.432,3.635,10.432,3.635H-5A34.746,34.746,0,0,0,4.93,6.771C8.988,4.262,8.634.37,11.233.37Z" transform="translate(27.746 10.405) rotate(180)"/>
+</svg>
