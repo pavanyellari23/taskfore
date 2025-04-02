@@ -1,0 +1,9 @@
+{
+  "group": "com.ust.pnp.revin",
+  "info": "Revin:Forecasting Web Application",
+  "maintainer": "DevOps Team <PnP.DevOps@ust.com>",
+  "name": "revenue-forecast-webapp",
+  "release": "r6",
+  "vendor": "Platform and Product Office, UST Inc",
+  "version": "2.1.6"
+}
