@@ -1,0 +1,97 @@
+[
+  {
+    "name": "",
+    "subName": "",
+    "id": 50,
+    "type": "header-toggle"
+  },
+  {
+    "name": "BILL",
+    "id": 50,
+    "type": "header",
+    "subName": "RATE /Hr"
+  },
+  {
+    "name": "BASE",
+    "id": 51,
+    "type": "header",
+    "subName": "COST/Hr"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "JAN"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "FEB"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "MAR"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "APR"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "MAY"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "JUN"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "JUL"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "AUG"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "SEP"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "OCT"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "NOV"
+  },
+  {
+    "name": "2023",
+    "pID": 0,
+    "parent": false,
+    "subName": "DEC"
+  },
+  {
+    "name": "Total",
+    "id": 52,
+    "type": "header"
+  }
+]

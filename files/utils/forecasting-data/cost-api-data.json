@@ -1,0 +1,408 @@
+{
+  "@type": "SingleResourceResponse",
+  "data": {
+    "type": "forecasting-plan",
+    "attributes": {
+      "currencyCode": "USD",
+      "projectId": null,
+      "accountId": "60cfa2d1ec2d9877883466c7",
+      "opportunityId": "620a3c28a2b1e3025796ff6c",
+      "projectName": null,
+      "billingType": "TIM_EXP",
+      "projectStart": "2024-06-02",
+      "projectEnd": "2024-12-02",
+      "forecasted": false,
+      "forecastLevelType": "RESOURCE_LEVEL_FORECAST",
+      "lastForecastRun": null,
+      "forecastingRoles": [
+        {
+          "id": "659788a54533f031bcc9f7d4",
+          "opportunityId": "620a3c28a2b1e3025796ff6c",
+          "orgRoleId": "Java Developer",
+          "roleGroupId": null,
+          "clientRoleId": null,
+          "billRate": 60.0,
+          "costRate": 50.0,
+          "inflation": 5.0,
+          "locationId": "INDBAN001",
+          "locationType": null,
+          "partnerProviderName": null,
+          "roleType": null,
+          "revenue": 5.0,
+          "cost": 100.0,
+          "resourceData": {
+            "id": "659788a54533f031bcc9f7d3",
+            "firstName": "Sumi",
+            "middleName": null,
+            "lastName": "James",
+            "email": "sumi.james@ust-global.com",
+            "employeeId": "U13375",
+            "employeeType": "Employee",
+            "userId": "60cfa316ec2d9877883466ce",
+            "allocationStart": null,
+            "allocationEnd": null,
+            "status": "ACTIVE",
+            "forecastingResourcePeriodDetails": [
+              {
+                "periodId": 202406,
+                "allocatedFte": 0.0
+              },
+              {
+                "periodId": 202407,
+                "allocatedFte": 0.0
+              },
+              {
+                "periodId": 202408,
+                "allocatedFte": 0.0
+              },
+              {
+                "periodId": 202409,
+                "allocatedFte": 1.0
+              },
+              {
+                "periodId": 202410,
+                "allocatedFte": 1.0
+              },
+              {
+                "periodId": 202411,
+                "allocatedFte": 1.0
+              },
+              {
+                "periodId": 202412,
+                "allocatedFte": 1.0
+              }
+            ]
+          },
+          "startPeriodId": 202409,
+          "endPeriodId": 202412,
+          "currentAllocationFTE": 1.0,
+          "utlizationPercentage": 0.0,
+          "band": "B1",
+          "totalFTE": 40.0,
+          "totalUtilisation": 80.0,
+          "deleted": false,
+          "revisedBillRate": 60.0,
+          "resourceSource": "EXTERNAL",
+          "anniversaryMonth": 3,
+          "revisionMonth": 1,
+          "foreCastingRolePlanPeriodDetails": [
+            {
+              "periodId": 202406,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 10.0,
+              "cost": 5.0,
+              "source": "INPUT",
+              "cellState": "NON_EDITABLE"
+            },
+            {
+              "periodId": 202407,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "NON_EDITABLE"
+            },
+            {
+              "periodId": 202408,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "NON_EDITABLE"
+            },
+            {
+              "periodId": 202409,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 50.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202410,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 50.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202411,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 50.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202412,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 50.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            }
+          ]
+        }
+      ],
+      "otherExpenses": [
+        {
+          "id": "659788a04533f031bcc9f7c9",
+          "totalCost": 0.0,
+          "periodDetailsList": [
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 0,
+              "source": "COMPUTED",
+              "amount": 0.0,
+              "cellState": "EDITABLE"
+            }
+          ]
+        }
+      ],
+      "directExpenses": [
+        {
+          "id": "659788a04533f031bcc9f7ca",
+          "totalCost": 0.0,
+          "periodDetailsList": [
+            {
+              "periodId": 202406,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202407,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202408,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202409,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202410,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202411,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202412,
+              "source": "COMPUTED",
+              "amout": 0.0,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            }
+          ],
+          "percentage": 0.0
+        }
+      ],
+      "forecastingPeriodSummary": [
+        {
+          "id": "659788a04533f031bcc9f7cb",
+          "fte": 0.0,
+          "resourceRevenue": 20,
+          "resourceCost": 10.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 10.0,
+          "source": null,
+          "periodId": 202406
+        },
+        {
+          "id": "659788a04533f031bcc9f7cc",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 10.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 10.0,
+          "source": null,
+          "periodId": 202407
+        },
+        {
+          "id": "659788a04533f031bcc9f7cd",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 20.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 20.0,
+          "source": null,
+          "periodId": 202408
+        },
+        {
+          "id": "659788a04533f031bcc9f7ce",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 20.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 20.0,
+          "source": null,
+          "periodId": 202409
+        },
+        {
+          "id": "659788a04533f031bcc9f7cf",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 30.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 30.0,
+          "source": null,
+          "periodId": 202410
+        },
+        {
+          "id": "659788a04533f031bcc9f7d0",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 30.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 30.0,
+          "source": null,
+          "periodId": 202411
+        },
+        {
+          "id": "659788a04533f031bcc9f7d1",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 40.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "resourceRevenueAdjustments": 0.0,
+          "resourceCostAdjustments": 0.0,
+          "finalResourceRevenue": 0.0,
+          "finalResourceCost": 4000.0,
+          "source": null,
+          "periodId": 202412
+        }
+      ],
+      "quaterlySummary": null,
+      "financialYearSummary": null,
+      "summary": {
+        "id": "659788a04533f031bcc9f7d2",
+        "fte": 0.0,
+        "resourceRevenue": 0.0,
+        "resourceCost": 0.0,
+        "grossMargin": 0.0,
+        "grossMarginPercentage": 0.0,
+        "utilizationPercentage": 0.0,
+        "directExpense": 0.0,
+        "directExpensePercentage": 0.0,
+        "resourceRevenueAdjustments": 0.0,
+        "resourceCostAdjustments": 0.0,
+        "finalResourceRevenue": 0.0,
+        "finalResourceCost": 1000.0,
+        "source": null
+      }
+    }
+  },
+  "meta": {
+    "@type": "ResourceMeta",
+    "totalResourceSize": 1
+  }
+}

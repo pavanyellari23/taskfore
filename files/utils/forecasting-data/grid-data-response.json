@@ -1,0 +1,776 @@
+{
+  "@type": "SingleResourceResponse",
+  "data": {
+    "type": "forecasting-plan",
+    "attributes": {
+      "currencyCode": "USD",
+      "projectId": "6207c28ea481fe1ee64f5baf",
+      "accountId": "60cfa2d1ec2d987788346611",
+      "opportunityId": "6207c28ea481fe1ee64f5baf",
+      "projectStart": "2023-07-27",
+      "projectEnd": "2023-12-27",
+      "forecasted": false,
+      "forecastLevelType": "RESOURCE_LEVEL_FORECAST",
+      "lastForecastRun": null,
+      "forecastingRoles": [
+        {
+          "id": "6582b0fb54762d29d69822c0",
+          "opportunityId": "6207c28ea481fe1ee64f5baf",
+          "orgRoleId": "Java developr",
+          "roleGroupId": null,
+          "clientRoleId": null,
+          "billRate": 60.0,
+          "costRate": 50.0,
+          "revisedBillRate": 50.0,
+          "inflation": 5.0,
+          "locationId": "INDBAN001",
+          "source": "CUSTOM",
+          "locationType": null,
+          "partnerProviderName": null,
+          "roleType": "role",
+          "revenue": 0.0,
+          "cost": 0.0,
+          "resourceData": {
+            "id": "6582b0fb54762d29d69822be",
+            "firstName": "Sumi",
+            "middleName": null,
+            "lastName": "James",
+            "email": "sumi.james@ust-global.com",
+            "employeeId": "U13375",
+            "employeeType": "Employee",
+            "anniversaryMonth": 5,
+            "userId": "60cfa316ec2d9877883466ce",
+            "allocationStart": null,
+            "allocationEnd": null,
+            "revisionMonth": 7,
+            "status": null,
+            "forecastingResourcePeriodDetails": [
+              {
+                "periodId": 202301,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202302,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202303,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202304,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202305,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202306,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202307,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202308,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202309,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202310,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202311,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202312,
+                "allocatedFte": 0.0,
+                "disable": false
+              }
+            ],
+            "resourceSource": null
+          },
+          "startPeriodId": 202305,
+          "endPeriodId": 202308,
+          "currentAllocationFTE": 1.0,
+          "utlizationPercentage": 20.0,
+          "band": "B1",
+          "totalFTE": 0.0,
+          "totalUtilisation": 0.0,
+          "projectStart": null,
+          "projectEnd": null,
+          "foreCastingRolePlanPeriodDetails": [
+            {
+              "periodId": 202301,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202302,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202303,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202304,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202305,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202306,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202307,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202308,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202309,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202310,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202311,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202312,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            }
+          ]
+        },
+        {
+          "id": "6582b0fb54762d29d69822c1",
+          "opportunityId": "6207c28ea481fe1ee64f5baf",
+          "orgRoleId": "Java developr",
+          "roleGroupId": null,
+          "clientRoleId": null,
+          "billRate": 60.0,
+          "costRate": 50.0,
+          "revisedBillRate": 50.0,
+          "inflation": 5.0,
+          "locationId": "INDBAN001",
+          "locationType": null,
+          "partnerProviderName": null,
+          "roleType": "role",
+          "revenue": 0.0,
+          "cost": 0.0,
+          "resourceData": {
+            "id": "6582b0fb54762d29d69822bf",
+            "firstName": "Tejas",
+            "middleName": null,
+            "lastName": "Khutale",
+            "email": "hridyamol.purushothaman@ust-global.com",
+            "employeeId": "U845611",
+            "employeeType": "Employee",
+            "anniversaryMonth": 5,
+            "userId": "5f80c2e3d71684f60dea35f8",
+            "allocationStart": null,
+            "allocationEnd": null,
+            "revisionMonth": 7,
+            "status": null,
+            "forecastingResourcePeriodDetails": [
+              {
+                "periodId": 202301,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202302,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202303,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202304,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202305,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202306,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202307,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202308,
+                "allocatedFte": 1.0,
+                "disable": false
+              },
+              {
+                "periodId": 202309,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202310,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202311,
+                "allocatedFte": 0.0,
+                "disable": false
+              },
+              {
+                "periodId": 202312,
+                "allocatedFte": 0.0,
+                "disable": false
+              }
+            ],
+            "resourceSource": null
+          },
+          "startPeriodId": 202305,
+          "endPeriodId": 202308,
+          "currentAllocationFTE": 1.0,
+          "utlizationPercentage": 20.0,
+          "band": "B1",
+          "totalFTE": 0.0,
+          "totalUtilisation": 0.0,
+          "projectStart": null,
+          "projectEnd": null,
+          "foreCastingRolePlanPeriodDetails": [
+            {
+              "periodId": 202301,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202302,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202303,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202304,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202305,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202306,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202307,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202308,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202309,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202310,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202311,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202312,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            }
+          ]
+        },
+        {
+          "id": "6582b0fb54762d29d69822c2",
+          "opportunityId": "6207c28ea481fe1ee64f5baf",
+          "orgRoleId": "Java developr",
+          "roleGroupId": "Data_Management",
+          "clientRoleId": "Senior_System_Architect/Database_Administrator__Mid_ADOBE_United_States_Data_Management",
+          "billRate": 60.0,
+          "costRate": 50.0,
+          "revisedBillRate": 50.0,
+          "inflation": 5.0,
+          "locationId": "India_(general)",
+          "locationType": "OFFSHORE",
+          "partnerProviderName": null,
+          "roleType": null,
+          "revenue": 0.0,
+          "cost": 0.0,
+          "resourceData": null,
+          "startPeriodId": 202307,
+          "endPeriodId": 202308,
+          "currentAllocationFTE": 1.0,
+          "utlizationPercentage": 20.0,
+          "band": "B1",
+          "totalFTE": 0.0,
+          "totalUtilisation": 0.0,
+          "projectStart": null,
+          "projectEnd": null,
+          "foreCastingRolePlanPeriodDetails": [
+            {
+              "periodId": 202301,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202302,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202303,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202304,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202305,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202306,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202307,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202308,
+              "fte": 1.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202309,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202310,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202311,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202312,
+              "fte": 0.0,
+              "utilisationPercentage": 0.0,
+              "revenue": 0.0,
+              "cost": 0.0,
+              "source": "INPUT",
+              "cellState": "EDITABLE"
+            }
+          ]
+        }
+      ],
+      "otherExpenses": [
+        {
+          "totalCost": 60,
+          "periodDetailsList": [
+            {
+              "periodId": 202307,
+              "source": "COMPUTED",
+              "amount": 11,
+              "cellState": "EDITABLE12"
+            },
+            {
+              "periodId": 202308,
+              "source": "COMPUTED",
+              "amount": 12,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202309,
+              "source": "COMPUTED",
+              "amount": 13,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202310,
+              "source": "COMPUTED",
+              "amount": 14,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202311,
+              "source": "COMPUTED",
+              "amount": 15,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202312,
+              "source": "COMPUTED",
+              "amount": 16,
+              "cellState": "EDITABLE"
+            }
+          ]
+        }
+      ],
+      "directExpenses": [
+        {
+          "totalCost": 0.0,
+          "periodDetailsList": [
+            {
+              "periodId": 202307,
+              "source": "COMPUTED",
+              "amout": 21,
+              "percentage": 90,
+              "cellState": "EDITABLE12"
+            },
+            {
+              "periodId": 202308,
+              "source": "COMPUTED",
+              "amout": 22,
+              "percentage": 91,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202309,
+              "source": "COMPUTED",
+              "amout": 23,
+              "percentage": 92,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202310,
+              "source": "COMPUTED",
+              "amout": 24,
+              "percentage": 93,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202311,
+              "source": "COMPUTED",
+              "amout": 25,
+              "percentage": 94,
+              "cellState": "EDITABLE"
+            },
+            {
+              "periodId": 202312,
+              "source": "COMPUTED",
+              "amout": 26,
+              "percentage": 0.0,
+              "cellState": "EDITABLE"
+            }
+          ],
+          "percentage": 0.0
+        }
+      ],
+      "forecastingPeriodSummary": [
+        {
+          "id": "657abdabcef4e66c171aad16",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202307
+        },
+        {
+          "id": "657abdabcef4e66c171aad17",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202308
+        },
+        {
+          "id": "657abdabcef4e66c171aad18",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202309
+        },
+        {
+          "id": "657abdabcef4e66c171aad19",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202310
+        },
+        {
+          "id": "657abdabcef4e66c171aad1a",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202311
+        },
+        {
+          "id": "657abdabcef4e66c171aad1b",
+          "fte": 0.0,
+          "resourceRevenue": 0.0,
+          "resourceCost": 0.0,
+          "grossMargin": 0.0,
+          "grossMarginPercentage": 0.0,
+          "utilizationPercentage": 0.0,
+          "directExpense": 0.0,
+          "directExpensePercentage": 0.0,
+          "source": null,
+          "periodId": 202312
+        }
+      ],
+      "quaterlySummary": null,
+      "financialYearSummary": null,
+      "summary": {
+        "id": "657abdaccef4e66c171aad1c",
+        "fte": 0.0,
+        "resourceRevenue": 0.0,
+        "resourceCost": 0.0,
+        "grossMargin": 0.0,
+        "grossMarginPercentage": 0.0,
+        "utilizationPercentage": 0.0,
+        "directExpense": 0.0,
+        "directExpensePercentage": 0.0,
+        "source": null
+      }
+    }
+  },
+  "meta": {
+    "@type": "ResourceMeta",
+    "totalResourceSize": 1
+  }
+}

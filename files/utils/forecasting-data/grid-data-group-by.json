@@ -1,0 +1,598 @@
+[
+  [
+    {
+      "subName": "IND-Bangalore",
+      "type": "label-header",
+      "parent": true,
+      "id": "jwig1900x0"
+    }
+  ],
+  [
+    {
+      "value": "PETER HEYNE (134875)",
+      "type": "role",
+      "subValue": "1 MAY 2023 to 31 DEC 2023 | 1 FTE",
+      "icon": "copy-right",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 25,
+      "type": "cost-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 20,
+      "type": "cost-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 12,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    }
+  ],
+  [
+    {
+      "value": "DAVID JOHN",
+      "type": "role",
+      "subValue": "1 MAY 2023 to 31 DEC 2023 | .5 FTE",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 25,
+      "type": "cost-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 20,
+      "type": "cost-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x0"
+    },
+    {
+      "value": 12,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x0"
+    }
+  ],
+  [
+    {
+      "subName": "Melbourne",
+      "type": "label-header",
+      "parent": true,
+      "id": "jwig1900x00"
+    }
+  ],
+  [
+    {
+      "value": "EMMA STEPHEN",
+      "type": "role",
+      "subValue": "1 MAY 2023 to 31 DEC 2023 | 1 FTE",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 25,
+      "type": "cost-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 20,
+      "type": "cost-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 1,
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 12,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    }
+  ],
+  [
+    {
+      "value": "EMMA STEPHEN",
+      "type": "role",
+      "subValue": "1 MAY 2023 to 31 DEC 2023 | .5 FTE",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 25,
+      "type": "cost-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 20,
+      "type": "cost-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": ".5",
+      "subValue": "90%",
+      "type": "cost-split-cell",
+      "pID": "jwig1900x00"
+    },
+    {
+      "value": 12,
+      "subValue": "90%",
+      "type": "cost-split-cell-read-only",
+      "pID": "jwig1900x00"
+    }
+  ],
+  [
+    {
+      "value": "Others",
+      "type": "role",
+      "parent": true,
+      "infoTooltip": "You can modify the FTE allocation in the table when you are in the FTE view. Other views are read only.",
+      "id": "jwig1900x10"
+    },
+    {
+      "value": "",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x11"
+    },
+    {
+      "value": "",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x12"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x13"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x14"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x15"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x16"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x17"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x18"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x19"
+    },
+    {
+      "value": "5,550",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x20"
+    },
+    {
+      "value": "2,100",
+      "type": "cost",
+      "parent": true,
+      "id": "jwig1900x21"
+    },
+    {
+      "value": "2,100",
+      "type": "cost",
+      "parent": true,
+      "id": "jwig1900x22"
+    },
+    {
+      "value": "2,100",
+      "type": "cost",
+      "parent": true,
+      "id": "jwig1900x23"
+    },
+    {
+      "value": "2,100",
+      "type": "cost",
+      "parent": true,
+      "id": "jwig1900x24"
+    },
+    {
+      "value": "13,000",
+      "type": "cost-read-only",
+      "parent": true,
+      "id": "jwig1900x25"
+    }
+  ],
+  [
+    {
+      "value": "Direct expense",
+      "type": "role",
+      "parent": true,
+      "id": "jwig1900x10"
+    },
+    {
+      "value": "",
+      "type": "cost-read-only",
+      "id": "jwig1900x24"
+    },
+    {
+      "value": "",
+      "type": "cost-read-only",
+      "id": "jwig1900x25"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x11"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x12"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x13"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x14"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x15"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x16"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x17"
+    },
+    {
+      "value": "5%",
+      "subValue": "30,000",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x18"
+    },
+    {
+      "value": "3%",
+      "subValue": "25,000",
+      "type": "cost-split-cell",
+      "id": "jwig1900x19"
+    },
+    {
+      "value": "3%",
+      "subValue": "25,000",
+      "type": "cost-split-cell",
+      "id": "jwig1900x20"
+    },
+    {
+      "value": "3%",
+      "subValue": "25,000",
+      "type": "cost-split-cell",
+      "id": "jwig1900x21"
+    },
+    {
+      "value": "3%",
+      "subValue": "25,000",
+      "type": "cost-split-cell",
+      "id": "jwig1900x22"
+    },
+    {
+      "value": "12",
+      "subValue": "12,720",
+      "type": "cost-split-cell-read-only",
+      "id": "jwig1900x23"
+    }
+  ]
+]
