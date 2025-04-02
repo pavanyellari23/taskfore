@@ -1,0 +1,29 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .title {
+    cursor: pointer;
+    transition: all ease-in-out 0.75s;
+
+    & svg {
+      margin-right: 1rem;
+      width: 2.4rem;
+    }
+
+    &:hover {
+      color: $textPrimary;
+    }
+  }
+
+  & .location-field-wrap {
+    width: 50%;
+
+    & .fields {
+      gap: 2rem;
+
+      & :global(.snap-textbox-wrap) {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+}

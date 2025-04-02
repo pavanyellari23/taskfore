@@ -1,0 +1,31 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .title {
+    cursor: pointer;
+    transition: all ease-in-out 0.75s;
+
+    & svg {
+      margin-right: 1rem;
+      width: 2.4rem;
+    }
+
+    &:hover {
+      color: $textPrimary;
+    }
+  }
+
+  & :global(.data-grid-container .data-grid) {
+    &:global(.data-sheet .table-view-thead) {
+      & :global(~ tbody .data-row td:first-child) {
+        min-width: unset;
+      }
+
+      & :global(~ tbody .cell .value-viewer) {
+        &::after {
+          content: '%';
+        }
+      }
+    }
+  }
+}

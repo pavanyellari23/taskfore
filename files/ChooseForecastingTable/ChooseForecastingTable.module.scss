@@ -1,0 +1,431 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  margin-top: 0.25rem;
+  overflow: auto; // Should remove once the utils code merged (V2)
+
+  & :global(.MuiTable-root) {
+    border-radius: 0;
+  }
+
+  & :global(.MuiTableHead-root) {
+    border-radius: 1rem;
+
+    & :global(.MuiTableSortLabel-root) {
+      color: $primaryMain;
+      display: block;
+    }
+
+    & :global(.MuiTableCell-root) {
+      padding: 0 !important;
+
+      & :global(.cell-header) {
+        align-items: center;
+        background-color: $secondary;
+        display: flex;
+        height: 8rem;
+        padding: 0 0.5rem;
+      }
+
+      &:first-child {
+        & :global(.cell-header) {
+          border-bottom-left-radius: 1rem;
+          border-top-left-radius: 1rem;
+          padding: 3rem 4rem;
+        }
+      }
+
+      &:last-child {
+        & :global(.cell-header) {
+          border-bottom-right-radius: 1rem;
+          border-top-right-radius: 1rem;
+          padding: 3rem 4rem;
+        }
+      }
+    }
+  }
+
+  & :global(.parent-row) {
+    & :global(.MuiTableCell-root) {
+      padding: 0 !important;
+
+      &:nth-last-child(2) .clickable-heading {
+        align-items: flex-start;
+      }
+
+      & .clickable-heading {
+        align-items: center;
+        background-color: $light;
+        border-bottom: 1px solid rgba($secondary, 0.5);
+        display: flex;
+        height: 7.5rem;
+
+        &.group-heading {
+          font-weight: 500 !important;
+
+          & h4 span {
+            max-width: 23rem;
+            font-weight: 500 !important;
+          }
+
+            & .list-more {
+                background-color: rgba($secondary, 0.3);
+                border-radius: 5rem;
+                height: 3rem;
+                width: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+        }
+
+        &.border-0 {
+          border: 0;
+        }
+
+        &.checkbox-wrapper {
+          padding-left: 6.5rem;
+        }
+
+        &.border-radius-top-left {
+          border-top-left-radius: 1rem;
+        }
+
+        &.border-radius-top-right {
+          border-top-right-radius: 1rem;
+        }
+
+        &.border-radius-bottom-left {
+          border-bottom-left-radius: 1rem;
+        }
+
+        &.border-radius-bottom-right {
+          border-bottom-right-radius: 1rem;
+        }
+
+        & .msg-wrapper {
+          margin-left: 4rem;
+
+          & svg {
+            fill: $statusSix;
+          }
+        }
+
+        & .user-name {
+          width: 15rem;
+        }
+      }
+
+      &:first-child {
+        & .clickable-heading {
+          padding-left: 4rem;
+        }
+      }
+    }
+
+    &:global(.open) {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+
+      & :global(.MuiTableCell-root) {
+        background-color: $light;
+        padding: 1.25rem 4rem;
+
+        &:last-child {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 1rem;
+        }
+
+        &:first-child {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 1rem;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $transparent !important;
+    }
+  }
+
+  & :global(.inner-child-row-last) {
+    & :global(.MuiTableCell-root) {
+      &:first-child {
+        border-bottom-left-radius: 1rem;
+
+        & .un-clickable-heading {
+          padding-left: 4rem;
+        }
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 1rem;
+      }
+    }
+  }
+
+  & :global(.inner-child-row.open),
+  :global(.inner-child-row-last.open) {
+    & :global(.MuiTableCell-root) {
+      background-color: rgba($light, 0.5);
+      padding: 0;
+    }
+  }
+
+  & .heading {
+    background-color: $transparent;
+    color: $textDark;
+    font-size: $textSpecial;
+    font-weight: $fontMedium !important;
+    margin: -16px;
+    padding: 1.6rem 0;
+
+    &:hover {
+      background-color: $borderDefault;
+    }
+  }
+
+  & .clickable-heading,
+  & .un-clickable-heading {
+    & h4 {
+      color: $primaryMain;
+      font-size: $textSmall;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      margin-left: 1rem;
+
+      & span {
+        cursor: pointer;
+        max-width: 20rem;
+      }
+    }
+
+    & .sub-label {
+      font-size: $textExtraSmall;
+      margin-left: 1rem;
+    }
+
+    & svg {
+      height: 1.6rem;
+      margin-bottom: -0.25rem;
+      margin-left: -2.75rem;
+      position: relative;
+      top: 0.25rem;
+      width: 1.6rem;
+    }
+
+    & :global(.draft-icon) {
+      color: $statusEight;
+      cursor: pointer;
+      height: 1.6rem;
+      margin-bottom: -0.25rem;
+      margin-left: -2.75rem;
+      position: relative;
+      top: -0.75rem;
+      width: 1.6rem;
+    }
+
+    & :global(.snap-tag-wrap) {
+      background-color: rgba($statusTwo, 0.2);
+      border-color: $statusThree;
+      border-radius: 0.4rem;
+      margin-left: 0.5rem;
+      padding: 0.125rem 0.45rem;
+
+      & p {
+        color: $statusTwo;
+        font-size: $textExtraSmall;
+        text-wrap: nowrap;
+      }
+    }
+
+    & :global(.info-tooltip-global) {
+      position: relative;
+      right: -0.5rem;
+      top: 0.5rem;
+
+      & img {
+        height: 2rem;
+      }
+    }
+  }
+
+  & .un-clickable-heading {
+    padding-top: 2rem;
+
+    & h4,
+    & .sub-label {
+      margin-left: 0;
+    }
+
+    &.checkbox-wrapper {
+      padding-left: 6.5rem;
+    }
+  }
+
+  & :global(.tableRow) {
+    background-color: $borderDefault;
+
+    &:hover {
+      background-color: $borderDefault;
+
+      & :global(.MuiTableCell-root) {
+        background-color: $borderDefault;
+      }
+    }
+
+    & :global(.MuiTableCell-root) {
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $borderDefault;
+      }
+    }
+  }
+
+  & :global(.small-tab) {
+    &:global(.disabled-tab-bg) {
+      pointer-events: none !important;
+    }
+  }
+
+  & :global(.MuiTabs-root) {
+    & :global(.MuiButtonBase-root) {
+      cursor: pointer;
+    }
+
+    & :global(.Mui-selected) {
+      background-color: $transparent !important;
+      pointer-events: none !important;
+    }
+  }
+
+  & :global(.MuiTableContainer-root) {
+    overflow: unset;
+    & :global(.MuiTable-root) {
+      overflow: auto;
+
+      & :global(.MuiTableHead-root) {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($textGrey, 0.35);
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: rgba($textDark, 0.1);
+  }
+
+  :global(.recharts-surface) {
+    margin-left: 0 !important;
+  }
+
+  & :global(.MuiTooltip-popper .MuiTooltip-tooltip.helper-tooltip.draft-helper-tooltip) {
+    min-width: 23.85rem;
+  }
+
+  & :global(.MuiTableRow-root) {
+    &:last-child {
+      &:global(.tableRow) {
+        background-color: rgba($light, 0.5);
+        height: 5rem;
+        position: relative;
+
+        &:hover {
+          & :global(.MuiTableCell-root) {
+            background-color: unset;
+          }
+        }
+      }
+    }
+
+    & :global(.load-more-wrap) {
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      & :global(.more) {
+        color: $primaryMain;
+        cursor: pointer;
+        margin-block: 1.5rem;
+        text-align: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+  & .edit-icon {
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  color: $textGrey;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+
+  & svg {
+    height: 2;
+  }
+
+  & .dropdown-window {
+    background-color: $light;
+    box-shadow: 0 0.3rem 0.6rem rgba($dark, 0.16);
+    left: 0;
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    width: 8rem;
+  }
+
+  &:hover {
+    & .dropdown-window {
+      opacity: 1;
+    }
+  }
+
+  & :global(.chip-wrapper) {
+    & :global(.snap-tag-wrap) {
+      padding: 0;
+    }
+  }
+}
+
+.action-tooltip {
+  &:global(.main-tooltip.MuiTooltip-tooltip.main-tooltip) {
+    max-width: 10rem !important;
+    padding: 1.5rem;
+  }
+}
+
+:global(.link-button) {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.draft-tooltip {
+  &:global(.main-tooltip) {
+    left: -1.5rem;
+    min-width: 23.5rem;
+    position: relative;
+  }
+}

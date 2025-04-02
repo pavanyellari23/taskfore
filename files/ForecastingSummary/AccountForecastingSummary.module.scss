@@ -1,0 +1,93 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.data-grid-container .data-grid) {
+    &:global(.data-sheet .table-view-thead) {
+      position: sticky;
+      top: -0.6rem;
+      z-index: 11;
+      
+      & :global(~ tbody .data-row .cell .value-viewer) {
+        color: $textDark;
+      }
+
+      & :global(.row:first-child .action-cell:first-child) {
+        min-width: 20rem;
+      }
+    }
+
+    &:global(.custom-wrapper) {
+      &:global(.data-grid) {
+        margin-bottom: 1.5rem;
+
+        & :global(.cell) {
+          max-width: 8rem;
+        }
+      }
+
+      & :global(.value-viewer) {
+        width: 7.3rem;
+      }
+    }
+
+    & :global(.cell .title-row-wrap) {
+      cursor: default;
+      padding-left: 2rem;
+
+      & :global(.row-designation-child) {
+        text-transform: capitalize;
+      }
+
+      & :global(.cell-hover-icon) {
+        display: none;
+      }
+    }
+
+    & :global(.cell.action-cell:first-child .table-header-th div) {
+      font-weight: 500 !important;
+    }
+
+    & :global(.cell.action-cell:first-child .table-header-th) {
+      align-items: flex-start;
+    }
+
+    & :global(.cell.action-cell .table-header-th) {
+      width: 100%;
+    }
+
+    & :global(.data-row.row-total) {
+      & :global(.cell),
+      &:global(.last-row .cell) {
+        background-color: $secondary !important;
+      }
+    }
+
+    & :global(.data-row .title-role) {
+      background-color: $tableBgLight !important;
+
+      & :global(.cell-title) {
+        align-items: center;
+        display: flex;
+
+        & :global(.role-info-icon) {
+          display: flex;
+        }
+      }
+    }
+
+    & :global(.data-row .cell:not(.blank-space.cell):nth-last-child(-n+6)),
+    & :global(.cell:not(.blank-space.cell):nth-last-child(-n+6)) {
+      background-color: $secondary !important;
+    }
+  }
+
+  /* stylelint-disable */
+  & :global(.ps__rail-x),
+  & :global(.ps__rail-y) {
+    z-index: 11;
+  }
+
+  & :global(.scrollbar-container) {
+    height: calc(100vh - 27rem);
+  }
+}

@@ -1,0 +1,39 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.center-module {
+  & :global(.MuiTypography-root) {
+    color: $primaryMain;
+    font-size: $textLarge;
+  }
+
+  & :global(.MuiCardContent-root) {
+    height: 29rem !important;
+    padding: 0 !important;
+
+    @include xxl {
+      height: 26rem !important;
+    }
+
+    & :global(.custom-legend) {
+      padding: 2rem 0;
+    }
+
+    & .empty-screen {
+      & :global(.empty-screen-image) {
+        height: 14.1rem;
+      }
+    }
+  }
+
+  & :global(.main-card.snap-card-wrapper) {
+    max-width: 56rem !important;
+  }
+
+  & :global(.recharts-responsive-container) {
+    height: 29rem !important;
+
+    @include xxl {
+      height: 26rem !important;
+    }
+  }
+}

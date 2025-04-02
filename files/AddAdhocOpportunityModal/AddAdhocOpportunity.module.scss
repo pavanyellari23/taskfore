@@ -1,0 +1,142 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  border-radius: 1rem;
+
+  & :global(.modal-content) {
+    background-color: $light;
+  }
+
+  & .pair-components {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    & :global(.snap-dropdown-wrap) {
+      margin-right: -1px;
+      max-width: 78%;
+
+      & :global(.MuiOutlinedInput-notchedOutline) {
+        border-radius: 0.5rem 0 0 0.5rem !important;
+      }
+    }
+
+    & :global(.snap-textbox-wrap) {
+      width: 22%;
+
+      & :global(.MuiOutlinedInput-root) {
+        border-radius: 0 0.5rem 0.5rem 0 !important;
+        padding-right: 0;
+      }
+    }
+  }
+
+  & .second-pair-components {
+    display: flex;
+
+    & :global(.snap-textbox-wrap) {
+      margin-right: -1px;
+      width: 60%;
+
+      & :global(.MuiFormControl-root) {
+        border-bottom-right-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+
+        & :global(.MuiOutlinedInput-root) {
+          border-bottom-right-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+        }
+      }
+    }
+
+    & :global(.snap-dropdown-wrap) {
+      border-radius: 0 0.5rem 0.5rem 0 !important;
+      max-width: 40%;
+
+      & :global(.MuiFormControl-root) {
+        border-bottom-left-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+
+        & :global(.MuiOutlinedInput-root) {
+          border-bottom-left-radius: 0 !important;
+          border-top-left-radius: 0 !important;
+        }
+      }
+    }
+
+    & :global(.MuiSelect-select) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      & :global(.dropdown-item-text) {
+        margin-right: 0.5rem;
+        min-width: 3rem;
+      }
+    }
+
+    & :global(.MuiSelect-icon) {
+      right: 0.5rem;
+    }
+  }
+
+  & :global(.MuiInputBase-root),
+  :global(.MuiSelect-root) {
+    height: 100%;
+  }
+
+  & .clone-text-fields {
+    background-color: rgba($secondary, 0.25);
+    margin: 1rem -4rem 3rem;
+    padding: 4rem;
+
+    & :global(.w-75) {
+      max-width: 75%;
+    }
+  }
+
+  & :global(.MuiDialogTitle-root) {
+    background-color: rgba($secondary, 0.25);
+    max-height: fit-content;
+    padding: 3rem 4rem !important;
+  }
+
+  & :global(.MuiPaper-rounded) {
+    border-radius: 1rem;
+    max-width: 101rem;
+  }
+
+  & :global(.scrollbar-container) {
+    max-height: 70rem;
+  }
+
+  & :global(.snap-calendar-container.calendar-align-right) {
+    & :global(.snap-calendar-wrapper) {
+      right: 0;
+    }
+  }
+
+  & :global(.snap-dropdown-wrap.multiselect) {
+    & :global(.MuiAutocomplete-inputRoot[class*='MuiOutlinedInput-root']) {
+      cursor: pointer;
+      gap: 0.5rem;
+      min-height: 4.6rem;
+      padding: 1.3rem 6rem 0.8rem 2rem !important;
+
+      & :global(.tag-style) {
+        margin: 0;
+      }
+
+      & :global(.MuiAutocomplete-input) {
+        cursor: pointer;
+      }
+    }
+
+    & :global(.MuiAutocomplete-endAdornment) {
+      top: calc(50% - 1.3rem);
+    }
+  }
+
+  & .border-alert-bar {
+    border: 1px solid $secondary;
+  }
+}

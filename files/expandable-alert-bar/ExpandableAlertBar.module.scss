@@ -1,0 +1,255 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.expandable-alert-bar-wrap {
+  background-color: $light;
+  border-radius: 5rem;
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1.85rem 2rem;
+
+  & > div {
+    height: 100%;
+  }
+
+  &.alert-secondary {
+    background-color: rgba($secondary, 0.3);
+    border: 1px solid $secondary;
+    padding: 0.75rem 1rem;
+
+    & svg {
+      color: $textGrey;
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+  }
+
+  &.alert-info {
+    color: $textPrimary;
+    height: 6rem;
+    padding: 1rem 2rem;
+
+    & :global(.snap-button-wrap) {
+      margin-left: 2rem;
+
+      & :global(.MuiButton-contained) {
+        padding: 1rem 2rem !important;
+      }
+
+      & svg {
+        height: 1.8rem;
+        margin-right: 0.4rem;
+        stroke-width: 1.5;
+        width: 1.8rem;
+      }
+    }
+  }
+
+  &.alert-extended-info {
+    color: $statusFour;
+    height: 6rem;
+    padding: 1rem 2rem;
+
+    & :global(.snap-button-wrap) {
+      margin-left: 2rem;
+
+      & svg {
+        height: 1.8rem;
+        margin-right: 0.4rem;
+        stroke-width: 1.5;
+        width: 1.8rem;
+      }
+    }
+  }
+
+  &.alert-info-plain-text {
+    background-color: $transparent;
+    color: $textPrimary;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  &.alert-error-plain-text {
+    background-color: $transparent;
+    color: $statusOne;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  &.alert-error {
+    color: $statusOne;
+  }
+
+  &.alert-solid-success {
+    background-color: $statusThree;
+    color: $textLight;
+    margin-bottom: 3rem;
+    padding: 1.3rem;
+  }
+
+  &.alert-solid-error {
+    background-color: $statusOne;
+    color: $textLight;
+    margin-bottom: 3rem;
+    padding: 1.3rem;
+  }
+
+  &.alert-solid-success-rounded {
+    background-color: $statusThree;
+    border-radius: 0.5rem;
+    color: $textLight;
+    padding: 1.3rem;
+  }
+
+  &.alert-solid-primary {
+    background-color: $primaryMain;
+    color: $textLight;
+    margin-bottom: 3rem;
+    padding: 1.3rem;
+  }
+
+  &.alert-error-bordered {
+    border: 1px solid $secondary;
+    color: $statusOne;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+  }
+
+  &.alert-error-bordered-list {
+    border: 1px solid $secondary;
+    border-radius: 1rem;
+    color: $statusOne;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  &.alert-bordered-list {
+    border: 1px solid $secondary;
+    border-radius: 1rem;
+    color: $textDark;
+    margin-bottom: 3rem;
+    padding: 2rem;
+
+    & svg {
+      color: $textPrimary;
+    }
+  }
+
+  &.alert-bordered-success {
+    border: 1px solid $statusThree !important;
+    color: $statusThree !important;
+
+    & svg {
+      color: $statusThree;
+    }
+  }
+
+  & svg {
+    flex-shrink: 0;
+    height: 2.2rem;
+    margin-right: 1rem;
+    width: 2.2rem;
+  }
+
+  :global(.chip-wrapper) {
+    & > :global(.chip-outer-bordered) {
+      margin-left: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+  & strong {
+    font-weight: $fontSemiBold !important;
+  }
+
+  & :global(.alert-msg-list-wrap) {
+    margin: 1.5rem 2.8rem 1rem;
+    text-align: left;
+
+    @include xxl {
+      margin-left: 3rem;
+    }
+
+    & .list-item-head {
+      color: $textDark;
+      margin-left: 0.5rem;
+      word-wrap: break-word;
+    }
+
+    & :global(.list-item-desc) {
+      color: $textGrey;
+      margin-left: 0.5rem;
+      word-wrap: break-word;
+    }
+
+    & :global(.alert-msg-list-item) {
+      margin-bottom: 1rem;
+
+      &::marker {
+        color: $textGrey;
+        font-size: $textLargeTwo;
+        line-height: normal;
+      }
+    }
+
+    &:global(.single-list) {
+      margin: 1rem 2.8rem 0;
+
+      & :global(.alert-msg-list-item) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  & :global(.expandable-alert-bar-scroll) {
+    margin: -1rem;
+    max-height: calc(50vh - 10rem);
+    padding: 1rem;
+    /* stylelint-disable */
+    & :global(.ps__rail-x) {
+      display: none;
+    }
+    /* stylelint-enable */
+  }
+
+  &.position-absolute {
+    position: absolute;
+  }
+
+  & .error {
+    padding: 0.66rem;
+  }
+}
+
+:global(.sm-alert-bar) {
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 -4rem;
+  padding: 1rem !important;
+  width: calc(100% + 8rem);
+  z-index: 1;
+
+  & :global(.expandable-alert-bar-scroll) {
+    background-color: rgba($statusOne, 0.2);
+    padding: 1.25rem 4rem;
+  }
+
+  & .collapse-icon {
+    border: 1px solid $statusOne;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+
+    & svg {
+      height: auto;
+      margin: auto;
+      transition: all ease-in-out 0.5s;
+      width: auto;
+    }
+
+    &.open {
+      & svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

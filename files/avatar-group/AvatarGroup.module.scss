@@ -1,0 +1,134 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+$gap: 0.65rem;
+
+.wrapper {
+  display: flex;
+  margin-left: $gap;
+
+  & .avatar-wrapper {
+    display: flex;
+    position: relative;
+
+    & :global(.snap-avatar-wrap) {
+      border: 1px solid $light;
+      border-radius: 50%;
+      margin-left: -$gap;
+
+      & :global(.inner-wrap) {
+        & :global(.avatar-details) {
+          display: none;
+        }
+
+        & :global(.MuiAvatar-root) {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+
+  & .remaining-avatars {
+    background-color: $secondary;
+    border-radius: 50%;
+    color: $textGrey;
+    font-size: $textSmall;
+    height: 3rem;
+    margin-left: -$gap;
+    width: 3rem;
+
+    &.decrease-text-size {
+      font-size: $textExtraSmallTwo;
+    }
+  }
+
+  & span {
+    &:first-child {
+      & .avatar-wrapper {
+        & :global(.MuiAvatar-root) {
+          background-color: $statusTwo;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      & .avatar-wrapper {
+        & :global(.MuiAvatar-root) {
+          background-color: $statusFour;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      & .avatar-wrapper {
+        & :global(.MuiAvatar-root) {
+          background-color: $primaryMain;
+        }
+      }
+    }
+  }
+}
+
+.avatar-info-tooltip {
+  &:global(.MuiTooltip-tooltip.snap-tooltip-wrap.main-tooltip) {
+    max-width: 15rem !important;
+  }
+}
+
+.remaining-avatar-info-tooltip {
+  &:global(.MuiTooltip-tooltip.snap-tooltip-wrap.main-tooltip) {
+    max-width: 17.5rem !important;
+
+    & ul {
+      margin: -2rem;
+      max-height: 25rem;
+      overflow: auto;
+      padding: 2rem 1rem 0.5rem 2rem;
+
+      & li {
+        margin-bottom: 0.5rem;
+
+        & span {
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-wrap: nowrap;
+        }
+
+        & .avatar-img {
+          & :global(.MuiAvatar-root) {
+            border: 1px solid $light;
+            height: 3rem;
+            margin-right: 0.5rem;
+            width: 3rem;
+          }
+        }
+
+        & :global(.avatar-details) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1rem 0.1rem rgba($secondary, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba($secondary, 0.2);
+    border-radius: 10px;
+
+    &:hover {
+      background: rgba($secondary, 0.3);
+    }
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba($secondary, 0.2);
+  }
+}

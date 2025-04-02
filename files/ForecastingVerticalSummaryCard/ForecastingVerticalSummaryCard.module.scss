@@ -1,0 +1,135 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  background-color: $statusFour;
+  border-radius: $cardBorderRadius;
+  color: $light;
+  padding: 2rem;
+
+  @include xxl {
+    padding: 1.5rem;
+  }
+
+  & .title-wrapper {
+    & .title {
+      font-size: $textLarge;
+      font-weight: $fontMedium !important;
+      text-transform: capitalize;
+
+      @include xxl {
+        font-size: $textSpecial;
+      }
+
+      & ~ p {
+        font-size: $textExtraSmall;
+      }
+    }
+
+    & .pricing-summary {
+      background-color: $secondaryLighterThree;
+      padding: 0.5rem 1.25rem !important;
+
+      @include xxl {
+        padding: 0.5rem 0.75rem !important;
+      }
+    }
+
+    & :global(.MuiButton-label) {
+      @include xxl {
+        font-size: $textExtraSmallTwo;
+      }
+
+      & :global(.MuiButton-startIcon) {
+        @include xxl {
+          margin-left: 0.25rem;
+          margin-right: 0.5rem;
+        }
+
+        & :global(.MuiSvgIcon-root) {
+          @include xxl {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  & .value-wrapper {
+    display: flex;
+    margin-top: 2rem;
+
+    & > .value-inner-wrapper {
+      padding-right: 4rem;
+
+      @include xxl {
+        padding-right: 2.5rem;
+      }
+
+      & .value {
+        align-items: center;
+        display: flex;
+        font-size: $textExtraLarge;
+        font-weight: $fontRegular !important;
+
+        @include xxl {
+          font-size: $textLarge;
+        }
+
+        @include xl {
+          font-size: $textSpecial;
+        }
+
+        & > .percentage {
+          border-left: 1px solid rgba($secondary, 0.5);
+          color: $secondary;
+          margin-left: 2rem;
+          padding: 0 2rem;
+        }
+      }
+
+      & .sub-title {
+        color: $secondary;
+        font-size: $textSmall;
+        font-weight: $fontRegular !important;
+
+        @include xxl {
+          font-size: $textSmall;
+        }
+      }
+    }
+  }
+
+  & .rounded-icon {
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 1.6rem;
+    justify-content: center;
+    width: 1.6rem;
+  }
+}
+
+:global(.vertical-summary-tooltip) {
+  &:global(.snap-tooltip-wrap) {
+    &:global(.main-tooltip) {
+      & .label {
+        margin-bottom: 3rem;
+      }
+
+      & .label,
+      & .sub-label {
+        font-size: $textExtraSmall;
+      }
+
+      & .count {
+        font-size: $textExtraLarge;
+      }
+
+      & .sub-label {
+        color: $secondary;
+      }
+    }
+  }
+}

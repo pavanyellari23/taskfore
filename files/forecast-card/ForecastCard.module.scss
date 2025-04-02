@@ -1,0 +1,73 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+$borderCurve: 1rem;
+
+.wrapper {
+  background-color: $light;
+  border-radius: $borderCurve;
+  padding: 4rem;
+  transition: background-color 2.5s ease;
+
+  & .inner-box {
+    background-color: rgba($statusFive, 0.15);
+    border-radius: $borderCurve;
+    margin: 3rem -2rem -2rem;
+    padding: 2.5rem 2rem;
+  }
+
+  & h5 {
+    font-size: $textSpecial;
+    text-transform: uppercase;
+  }
+
+  & .numbers-wrapper {
+    & h3 {
+      font-size: $textExtraLarge;
+      line-height: 1.5;
+
+      & span {
+        border-left: 1px solid rgba($secondary, 0.5);
+        margin-left: 1rem;
+        padding-left: 1rem;
+      }
+    }
+
+    & p {
+      color: $textGrey;
+      font-size: $textSmall;
+    }
+
+    & .percentage {
+      &::after {
+        content: '%';
+        display: inline-block;
+        font-size: $textSmall;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  & .date-time {
+    color: $textGrey;
+    font-size: $textDefault;
+    margin-top: 0.75rem;
+
+    & svg {
+      height: 1.4rem;
+      margin-right: 0.5rem;
+      width: 1.4rem;
+    }
+  }
+
+  &.new-background {
+    background-color: rgba($statusNine, 0.3);
+  }
+
+  & :global(.chip-wrapper) {
+    align-items: flex-start;
+  }
+
+  & .fy-year {
+    color: $statusFour;
+  }
+}

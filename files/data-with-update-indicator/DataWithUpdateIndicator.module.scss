@@ -1,0 +1,32 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.update-indicator-wrap {
+  display: inline-block;
+  position: relative;
+
+  & .update-indicator {
+    background-color: $statusOne;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0.6rem;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    width: 0.6rem;
+  }
+
+  .update-indicator-tooltip {
+    top: -1rem;
+
+    & .update-from,
+    & .update-to {
+      font-size: $textSpecial;
+
+      & .update-label {
+        font-size: $textExtraSmall;
+      }
+    }
+  }
+}

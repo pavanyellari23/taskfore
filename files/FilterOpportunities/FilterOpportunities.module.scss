@@ -1,0 +1,70 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    height: 100%;
+
+    & :global(.scrollbar-container) {
+      color: $textDark;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4rem;
+
+      & :global(.snap-dropdown-wrap.mb-2.error-border) {
+        border: 0.1rem solid $statusOne;
+      }
+
+      & .switch-wrapper {
+        font-size: $textSmall;
+        gap: 1rem;
+
+        &.with-border {
+          border-bottom: 1px solid $secondary;
+          margin: 0 -4rem 4rem;
+          padding: 0 4rem 3rem;
+        }
+      }
+
+      & .bottom-actions {
+        gap: 2rem;
+
+        & a {
+          color: $textGrey;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          & .btn-active {
+            color: $primaryMain;
+          }
+        }
+      }
+
+      & .inline-component {
+        & :global(.snap-dropdown-wrap),
+        & :global(.snap-calendar-container) {
+          max-width: 28.8rem;
+        }
+      }
+
+      & .end-date {
+        & :global(.snap-calendar-wrapper) {
+          right: 0;
+        }
+      }
+
+      & :global(.snap-dropdown-wrap.multiselect) {
+        & :global(.MuiAutocomplete-endAdornment) {
+          top: calc(50% - 1.3rem);
+        }
+      }
+
+      & :global(.snap-dropdown-wrap .MuiFormLabel-filled) {
+        color: $textGrey;
+      }
+    }
+  }
+}

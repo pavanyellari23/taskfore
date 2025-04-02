@@ -1,0 +1,44 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    & > :global(.scrollbar-container) {
+      height: calc(100vh - 23.5rem);
+      padding: 4rem 3.5rem;
+    }
+  }
+
+  & .project-info {
+    background-color: rgba($secondary, 0.5);
+    border-radius: 1rem;
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+
+    & .value {
+      & h4 {
+        color: $textDark;
+        font-size: $textSpecial;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    & .project-details,
+    & .project-dates,
+    & .project-managers {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  & .label,
+  & :global(.avatar-name) {
+    color: $textDark;
+  }
+
+  & :global(.snap-autosuggest-wrap) {
+    background-color: $light;
+    border-radius: 0.5rem;
+  }
+}

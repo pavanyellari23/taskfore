@@ -1,0 +1,197 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+:global(.custom-wrapper) {
+  & :global(.table-view-thead) {
+    background-color: $lightOpacity;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    & tr {
+      border: 0.5px solid !important;
+      border-color: $textGrey;
+      border-spacing: 0.05rem;
+    }
+  }
+
+  & :global(tbody) {
+    background-color: $lightOpacity;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  & :global(.position-label-wrap) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  & :global(.tag-style) {
+    background-color: $secondary;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  & :global(.table-header-th) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    justify-content: center;
+    width: 7rem;
+  }
+
+  & :global(.subset-header-wrap) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:global(.data-grid) {
+    table-layout: fixed;
+
+    & :global(.cell) {
+      font-size: $textExtraSmallTwo;
+      height: 7rem;
+      line-height: 1.5;
+      padding: 0.5rem;
+      text-align: center;
+      vertical-align: middle;
+      width: 7rem;
+      width: fit-content;
+
+      & :global(.value-viewer),
+      & :global(.data-editor) {
+        font-size: $textExtraSmallTwo;
+        line-height: 1.5;
+      }
+
+      & :global(.row-title-power-value) {
+        font-size: $textDefault;
+      }
+    }
+  }
+
+  &:global(.data-sheet) {
+    th {
+      &:global(.parent) {
+        border: 0.5px solid;
+        cursor: pointer;
+        font-size: $textExtraSmallTwo;
+        font-weight: $fontSemiBold;
+      }
+    }
+  }
+
+  /* stylelint-disable */
+  & :global(th.action-cell) {
+    font-size: $textExtraSmallTwo;
+    font-weight: $fontLight;
+  }
+
+  & :global(td.action-cell) {
+    font-size: $textExtraSmallTwo;
+    font-weight: $fontMedium;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
+  }
+
+  /* stylelint-enable */
+  & :global(.header-secondary th) {
+    padding: 2rem 0;
+  }
+
+  & :global(.month-style) {
+    font-size: $textExtraSmallThree;
+    font-weight: $fontRegular;
+  }
+
+  & :global(.month-header-wrap) {
+    display: grid;
+    text-align: center;
+    width: fit-content;
+  }
+
+  & :global(.value-viewer) {
+    height: 7rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  & :global(.read-only) {
+    background-color: $lightOpacity;
+  }
+
+  & :global(.data-grid-container) {
+    width: calc(100vw - 4rem);
+  }
+
+  & :global(.blank-space) {
+    height: 0;
+  }
+
+  & :global(.selected) {
+    &:global(.read-only) {
+      border: 1px solid $transparent !important;
+    }
+  }
+
+  & :global(.quick-role-numbers) {
+    color: $textDark;
+    font-size: $textExtraLarge;
+    padding-right: 2rem;
+    text-align: right;
+
+    & p {
+      color: $textGrey;
+      font-size: $textSmall;
+    }
+
+    &:global(.column-danger) {
+      color: $statusOne;
+
+      & p {
+        color: $statusOne;
+      }
+    }
+  }
+}
+
+html :global(.data-grid) {
+  & :global(.table-view-thead) {
+    & :global(.quick-role-row-header) {
+      &:global(.header-secondary) {
+        & :global(.action-cell.cell) {
+          &:first-child {
+            padding-left: 0 !important;
+          }
+
+          & :global(.quick-role-panel) {
+            background-color: $transparent !important;
+            left: 0;
+            padding: 2rem;
+            position: sticky;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global(.ref-wrapper) {
+  display: inline-block;
+  margin-bottom: 1rem;
+  max-width: calc(100vw - 8rem);
+}
+
+:global(.data-grid-container .data-grid .cell.blank-space > span),
+:global(.data-grid-container .data-grid .cell.blank-space) {
+  height: 0 !important;
+}
+
+:global(.data-grid-container .data-grid td .blank-space .cell .read-only) {
+  padding: 0;
+}

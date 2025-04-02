@@ -1,0 +1,35 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.progress-modal {
+  & :global(.MuiDialogContent-root) {
+    padding: 0 !important;
+  }
+
+  & :global(.MuiDialogContent-dividers) {
+    border-bottom: 0;
+  }
+
+  & :global(.MuiDialogActions-root) {
+    padding-bottom: 6rem !important;
+  }
+
+  & :global(.MuiDialogTitle-root) {
+    padding: 0.5rem !important;
+  }
+
+  & :global(.icon-global-wrapper) {
+    background-color: $transparent;
+    height: auto;
+    margin-bottom: 0;
+    width: auto;
+
+    & svg {
+      height: 20rem !important;
+      width: 20rem !important;
+    }
+  }
+
+  & :global(.confirmation-modal-text) {
+    color: $textDark;
+  }
+}

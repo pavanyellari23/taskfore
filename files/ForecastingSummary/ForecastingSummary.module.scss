@@ -1,0 +1,181 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  .project-numbers {
+    border: 1px solid;
+    border-radius: 50%;
+    color: $statusFour;
+    cursor: pointer;
+    font-size: $textSmall;
+    height: 2.6rem;
+    width: 2.6rem;
+
+    &:hover {
+      background-color: $statusFour;
+      color: $textLight;
+    }
+  }
+
+  & .action-buttons {
+    & .expand-button {
+      min-height: 5rem;
+      transition: all ease-in-out 0.5s;
+
+      & .icon-wrapper {
+        & svg {
+          color: $textGrey;
+          height: 1.25rem;
+          transition: all ease-in-out 0.5s;
+          width: auto;
+        }
+      }
+
+      &:hover {
+        background-color: rgba($light, 0.5) !important;
+
+        & .icon-wrapper {
+          & svg {
+            &:first-child {
+              transform: translateX(-0.5rem);
+            }
+
+            &:last-child {
+              transform: translateX(0.5rem);
+            }
+          }
+        }
+      }
+
+      &.expanded {
+        & .icon-wrapper {
+          & svg {
+            &:first-child {
+              transform: translateX(-0.25rem) scaleX(-1);
+            }
+
+            &:last-child {
+              transform: translateX(0.25rem) scaleX(-1);
+            }
+          }
+        }
+
+        &:hover {
+          & .icon-wrapper {
+            & svg {
+              &:first-child {
+                transform: translateX(0) scaleX(-1);
+              }
+
+              &:last-child {
+                transform: translateX(0) scaleX(-1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .excel-button {
+      margin-right: 2rem;
+      position: relative;
+
+      & img {
+        height: 2.5rem;
+      }
+
+      & svg {
+        bottom: 0;
+        color: $textGrey;
+        position: absolute;
+        right: 0.5rem;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  & .diagrams {
+    min-height: 25rem;
+
+    &.expanded {
+      max-width: 60rem;
+    }
+  }
+
+  & .grid-data {
+    & .grid {
+      margin: 0 -3rem;
+      padding: 0 3rem;
+
+      & .column {
+        padding: 1.25rem 0;
+        width: 50%;
+
+        &:last-child {
+          border-left: 1px solid rgba($secondary, 0.5);
+          padding-left: 2rem;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: -2rem;
+      }
+
+      &:nth-child(even) {
+        background-color: rgba($secondary, 0.15);
+      }
+    }
+  }
+
+  & .breadcrumb {
+    & :global(.primary-invert) {
+      height: 4rem;
+      min-width: auto;
+      padding: 0 !important;
+      width: 4rem;
+
+      & :global(.MuiButton-label) {
+        & svg {
+          color: $dark;
+          height: 2rem;
+          margin: 0;
+          stroke-width: 1px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  & :global(.icon-content-wrapper) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+//css for group tooltip
+.project-info-tooltip {
+  &:global(.main-tooltip) {
+    margin-top: 2rem;
+    min-width: 30rem;
+  }
+
+  & .project-info-lists {
+    & li {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      & h4 {
+        font-size: $textLarge;
+        font-weight: $fontRegular !important;
+        margin-bottom: 0.275rem;
+      }
+
+      & p {
+        color: rgba($light, 0.75);
+        font-size: $textSmall;
+        font-weight: $fontRegular !important;
+      }
+    }
+  }
+}

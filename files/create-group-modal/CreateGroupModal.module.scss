@@ -1,0 +1,131 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    height: 100%;
+
+    & :global(.scrollbar-container) {
+      padding: 4rem;
+      color: $textDark;
+    }
+
+    & :global(.MuiAccordionSummary-root) {
+      flex-direction: row-reverse;
+      padding: 1rem 0;
+      background-color: $light;
+    }
+
+    & :global(.MuiAccordionSummary-content) {
+      margin: 0 !important;
+    }
+
+    & :global(.MuiAccordionSummary-expandIcon) {
+      position: absolute;
+      left: 0.8rem;
+    }
+
+    & :global(.MuiAccordionDetails-root) {
+      padding: 2rem 0;
+      margin-top: -3rem;
+    }
+
+    & :global(.snap-autosuggest-wrap) {
+      background-color: $light;
+      border-radius: 0.5rem;
+    }
+
+    & :global(.snap-autosuggest-wrap .MuiAutocomplete-root .MuiFormControl-root .MuiInputLabel-outlined) {
+      color: $textDark;
+    }
+
+    & .card-wrap {
+      padding: 1rem 5rem;
+      display: grid;
+      grid-template-columns: 40% 30% 30%;
+      gap: 2rem;
+      width: 100%;
+
+
+      & .title-wrap {
+        &:first-child {
+          width: 20rem;
+        }
+
+        & .title {
+          font-size: $textSpecial;
+        }
+
+        & .sub-title {
+          color: $textGrey;
+        }
+      }
+    }
+
+    & .accordion-wrapper {
+      margin-bottom: 0.5rem;
+    }
+
+    & .heading {
+      font-weight: $fontMedium !important;
+      margin-bottom: 2rem;
+    }
+
+    & .close-btn {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: $textGrey;
+      cursor: pointer;
+      margin: 1rem;
+      position: absolute;
+      right: 1rem;
+    }
+
+    & :global(.primary-link) {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
+  }
+
+  & .confirmation-message {
+    text-align: center;
+
+    & .confirmation-title {
+      color: $dark;
+      font-size: $textExtraLarge;
+      margin-bottom: 1.5rem;
+    }
+
+    & .confirmation-desc {
+      color: $textGrey;
+    }
+
+    & .rounded-icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 2.5rem;
+
+      & svg {
+        color: $dark;
+        height: 4rem !important;
+        width: 4rem !important;
+
+        & circle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .group-modal-btns-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  & .custom-group-modal {
+    z-index: 1;
+  }
+}

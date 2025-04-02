@@ -1,0 +1,102 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  background-color: $light;
+  border-radius: 1rem;
+  padding: 4rem;
+
+  & .logo-wrapper {
+    height: 10rem;
+    margin-bottom: 3rem;
+
+    & .logo {
+      margin-right: auto;
+      max-height: -webkit-fill-available; /* stylelint-disable-line */
+      max-width: 60%;
+      object-fit: contain;
+      text-align: left;
+      width: fit-content;
+    }
+
+    & .without-logo {
+      background-color: rgba($textGrey, 0.1);
+      border-radius: 5rem;
+      color: rgba($textGrey, 0.8);
+      padding: 1rem 1.2rem;
+      width: fit-content;
+    }
+  }
+
+  & .opp-id {
+    font-size: $textSmall;
+    margin-bottom: 2rem;
+
+    & p {
+      margin-top: 0.25rem;
+      opacity: 0.65;
+    }
+  }
+
+  & .forecast-period {
+    background-color: $secondaryLighter;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+
+    & h2 {
+      font-size: $textDefault;
+      font-weight: $fontMedium !important;
+      margin-bottom: 1.5rem;
+    }
+
+    & h6 {
+      font-size: $textDefault;
+    }
+
+    & .calendar-chip-wrapper {
+      color: $textGrey;
+      gap: 0.5rem;
+
+      & .calendar-chip {
+        background-color: $light;
+        border-radius: 4rem;
+        color: $dark;
+        padding: 0.75rem 2rem;
+      }
+    }
+
+    & :global(.months-global) {
+      max-width: none !important;
+    }
+  }
+
+  & .current-week {
+    background-color: rgba($statusEleven, 0.5);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 3rem;
+
+    & svg {
+      height: 3.5rem;
+      margin-bottom: 0.75rem;
+      width: auto;
+    }
+
+    & p {
+      font-size: $textSpecial - 0.1rem;
+      font-weight: $fontMedium !important;
+
+      & small {
+        color: $textGrey;
+        display: block;
+        font-size: $textDefault;
+      }
+    }
+  }
+
+  & .comment {
+    border-top: 1px solid rgba($textGrey, 0.125);
+    margin: 3rem -4rem 0;
+    padding: 0 4rem;
+  }
+}

@@ -1,0 +1,36 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.filter-wrapper {
+  & :global(.snap-dropdown-wrap) {
+    width: 30rem;
+
+    & :global(.MuiOutlinedInput-root .MuiSelect-root) {
+      background-color: $light;
+    }
+  }
+
+  & :global(.snap-dropdown-wrap) {
+    background-color: $light;
+
+    & :global(.MuiAutocomplete-popupIndicatorOpen) {
+      transform: rotate(180deg) !important;
+    }
+  }
+
+  & :global(.autocomplete-popper) {
+    z-index: 10;
+  }
+
+  & :global(.MuiAutocomplete-clearIndicator) {
+    visibility: hidden !important;
+  }
+
+  & :global(.MuiTextField-root.input-with-value .MuiInputBase-root.Mui-focused .MuiInputBase-input + .MuiAutocomplete-endAdornment .MuiAutocomplete-clearIndicator) {
+    visibility: visible !important;
+  }
+
+  & :global(.verticalParentAccountoptionClass .MuiAutocomplete-listbox .MuiAutocomplete-option[aria-selected="true"]) {
+    background-color: $secondaryLight !important;
+    color: $primaryMain;
+  }
+}

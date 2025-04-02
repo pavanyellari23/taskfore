@@ -1,0 +1,50 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.main-value-wrapper {
+  & :global(.main-value) {
+    font-family: $fontFamily;
+    font-size: $textExtraLarge;
+
+    @include xxl {
+      font-size: $textLarge;
+    }
+
+    @include md {
+      font-size: $textSpecial;
+    }
+
+    & .secondary {
+      align-items: center;
+      border-left: 0.2rem solid $secondary;
+      color: $textGrey;
+      display: inline-flex;
+      height: 2.5rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+
+      &.secondary-small {
+        font-size: $textDefault;
+
+        & .secondary-small-label {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    & .currency,
+    & .percentage {
+      color: $textGrey;
+      font-size: $textDefault;
+    }
+  }
+
+  & :global(.main-value-title) {
+    color: $textGrey;
+    font-family: $fontFamily;
+    font-size: $textDefault;
+
+    @include xxl {
+      font-size: $textExtraSmall;
+    }
+  }
+}

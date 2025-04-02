@@ -1,0 +1,1 @@
+export { default as ChooseForecastingTable} from './ChooseForecastingTable';

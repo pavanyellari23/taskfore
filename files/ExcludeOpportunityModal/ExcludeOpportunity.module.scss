@@ -1,0 +1,12 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  &:global(.main-modal) {
+    margin: auto;
+    max-width: 70rem;
+
+    & :global(.MuiPaper-rounded) {
+      border-radius: 1rem !important;
+    }
+  }
+}
