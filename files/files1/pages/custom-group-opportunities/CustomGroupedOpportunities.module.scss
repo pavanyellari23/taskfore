@@ -1,0 +1,35 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+    & .currency-wrap {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $textGrey;
+
+        & .dollar-icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 1px solid $textGrey;
+            padding: 0.5rem;
+        }
+
+        & svg {
+            font-size: $textLargeTwo;
+            margin-right: 0;
+        }
+    }
+
+    & .table-label {
+        color: $textGrey;
+        margin-block: 1.5rem;
+
+        & strong {
+            color: $textDark;
+            font-weight: $fontMedium !important;
+        }
+    }
+
+    // & .table-wrapper {}
+}

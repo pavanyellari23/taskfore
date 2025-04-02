@@ -1,0 +1,107 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  border-radius: 1rem;
+  margin: auto 4rem;
+  max-height: calc(100vh - 80px);
+
+  & .action-wrapper {
+    background-color: $light;
+
+    & h3 {
+      color: $textDark;
+      font-weight: $fontMedium !important;
+    }
+  }
+
+  & :global(.MuiPaper-rounded) {
+    border-radius: 1rem;
+  }
+
+  /* stylelint-disable */
+  &:global(.main-modal .ps__rail-x) {
+    display: block;
+    top:16rem;
+  }
+
+
+  & :global(.empty-add-role-resource) {
+    padding: 14rem 0;
+
+    & :global(.empty-screen-image) {
+      max-height: 17.5rem;
+    }
+
+    & :global(.empty-screen-title) {
+      color: $textDark;
+      font-size: $textLarge;
+    }
+  }
+  & :global(.ref-wrapper) {
+    height: 50rem;
+  }
+
+  & .table-title {
+    font-size: $textDefault;
+    margin-top: 1rem;
+  }
+  & :global(.resource-allocation-tab-wrapper){
+    background-color: $light;
+  }
+
+  %status-indicator {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+  }
+  
+  & .status-wrapper {
+    & .error-status-indicator {
+      @extend %status-indicator;
+      background-color: $statusOne;
+    }
+    & .attention-status-indicator {
+      @extend %status-indicator;
+      background-color: $statusTwo;
+    }
+  }
+
+  & .empty-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    // background: rgba($secondary, 0.2);
+    margin: 10rem -4rem;
+    justify-content: center;
+
+    & :global(.empty-screen-image-wrapper) {
+      display: flex;
+      align-items: center;
+
+      & :global(.empty-screen-image) {
+        height: 18rem;
+      }
+    }
+
+    & :global(.empty-screen-title) {
+      color: $textDark;
+    }
+
+    & :global(.empty-screen-sub-title) {
+      color: $textDark;
+      text-align: center;
+    }
+  }
+
+}
+
+.modal-inside {
+  &:global(.main-modal.snap-modal-wrap) {
+    & :global(.MuiDialog-paper) {
+      border-left: 1px solid $secondary;
+      border-radius: 0 1rem 1rem 0;
+      box-shadow: none !important;
+    }
+  }
+}

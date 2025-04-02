@@ -1,0 +1,129 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .excel-button {
+    position: relative;
+
+    & img {
+      height: 2.5rem;
+    }
+
+    & svg {
+      bottom: 0;
+      color: $textGrey;
+      position: absolute;
+      right: 0.5rem;
+      transform: rotate(90deg);
+    }
+  }
+
+  & .breadcrumb-wrapper {
+    margin-bottom: 2.5rem;
+
+    & :global(.breadcrumb-subtitle-global) {
+      & :global(.active) {
+        & span {
+          color: $textPrimary;
+        }
+      }
+    }
+
+    & :global(.MuiButton-contained.primary-invert) {
+      height: 4rem;
+      min-width: auto;
+      padding: 0 !important;
+      width: 4rem;
+
+      & :global(.MuiButton-label) {
+        & svg {
+          color: $dark;
+          height: 2rem;
+          margin: 0;
+          stroke-width: 1px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  & .action-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & .group-switch {
+      min-width: 20rem;
+    }
+
+    & :global(.info-tooltip-global) {
+      z-index: 1;
+    }
+  }
+
+  %status-indicator {
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  & .status-wrapper {
+    & .error-status-indicator {
+      @extend %status-indicator;
+
+      background-color: $statusOne;
+    }
+
+    & .attention-status-indicator {
+      @extend %status-indicator;
+
+      background-color: $statusTwo;
+    }
+  }
+
+  .inner-wrapper {
+    height: calc(100vh - 12rem);
+  }
+
+  .resource-table-wrapper {
+    flex-grow: 1;
+    margin-bottom: 6rem;
+    overflow-y: auto;
+    z-index: 1;
+  }
+}
+
+.project-info-tooltip {
+  &:global(.main-tooltip) {
+    margin-top: 2rem;
+    min-width: 30rem;
+  }
+
+  & .project-info-lists {
+    & li {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      & h4 {
+        font-size: $textLarge;
+        font-weight: $fontRegular !important;
+        margin-bottom: 0.275rem;
+      }
+
+      & p {
+        color: rgba($light, 0.75);
+        font-size: $textSmall;
+        font-weight: $fontRegular !important;
+      }
+    }
+  }
+
+}
+
+.resource-forecasting-alert, .custom-alert-bar {
+  z-index: 20;
+}
+
+.custom-alert-bar {
+  & svg {
+    color: $primaryMain;
+  }
+}

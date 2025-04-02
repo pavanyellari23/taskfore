@@ -1,0 +1,19 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  max-height: 50vh;
+  max-width: calc(100vw - 4rem);
+  overflow: auto;
+  width: fit-content;
+
+  :global(.grid-title-wrapper) {
+    & h4 {
+      color: $textDark;
+      font-weight: $fontMedium !important;
+    }
+
+    & p {
+      color: $textGrey;
+    }
+  }
+}

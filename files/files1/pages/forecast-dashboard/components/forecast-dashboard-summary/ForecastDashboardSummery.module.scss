@@ -1,0 +1,182 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .dashboard-actions {
+    gap: 1rem;
+
+    & .info-text-wrapper {
+      color: $textGrey;
+      & :global(.info-tooltip-global) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    & .dollar-icon {
+      border: 1px solid $textGrey;
+      border-radius: 50%;
+      color: $textGrey;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    & .dollartext {
+      padding-left: 0.5rem;
+    }
+
+    & .review-forecast-btn {
+      min-width: 18rem;
+    }
+  }
+
+  & .dropdown-actions {
+    & :global(.snap-dropdown-wrap) {
+      width: 40rem;
+    }
+  }
+
+  & .view-all-dropdown {
+    justify-content: flex-end;
+
+    & :global(.snap-dropdown-wrap) {
+      width: 35rem;
+    }
+  }
+
+  & .toast {
+    border: 1px solid $secondary;
+    color: $primaryMain;
+    padding: 2.1rem 2rem;
+
+    & .check-icon {
+      background-color: $statusThree;
+      border-radius: 50%;
+      height: 2.2rem;
+      margin-right: 1rem;
+      padding: 0.25rem;
+      width: 2.2rem;
+
+      & svg {
+        color: $textLight;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    & :global(.position-relative) {
+      position: relative;
+    }
+
+    &.position-absolute {
+      position: absolute;
+    }
+
+    & :global(.gif-img) {
+      margin-left: -1rem;
+      position: absolute;
+      width: 4rem;
+    }
+
+    & :global(.ripple-animation) {
+      color: $statusOne !important;
+      display: flex;
+      z-index: 1;
+
+      &::before {
+        animation: rippleAnimation 2s ease-in-out infinite;
+        background-color: $statusOne;
+        border-radius: 50%;
+        content: '';
+        height: 3.4rem;
+        left: -0.6rem;
+        position: absolute;
+        top: -0.54rem;
+        width: 3.4rem;
+        z-index: -1;
+      }
+
+      svg {
+        background: $light;
+        border: 2px solid $light;
+        border-radius: 50rem;
+      }
+    }
+    /*stylelint-disable */
+    @keyframes rippleAnimation {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 0.25;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    & .submit-note {
+      color: $statusThree !important;
+    }
+
+    & .in-progress-note {
+      color: $statusOne !important;
+      padding: 0 1px;
+    }
+  }
+
+  & .sub-head {
+    font-size: $textLarge;
+    font-weight: $fontMedium !important;
+  }
+
+  & .forecast-account-calendar {
+    & :global(.timeline-calendar-global) {
+      & :global(.period-global),
+      & :global(.date-global) {
+        margin: 0;
+        min-width: unset;
+        padding: 0 !important;
+        text-align: center;
+        text-transform: none;
+        width: 8.5rem;
+      }
+    }
+  }
+
+  .primary-link {
+    color: $textPrimary;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & :global(.empty-screen-content-row) {
+
+    &:global(.card-empty-screen)  {
+      background-color: rgba($light, 0.5);
+    }
+
+    & :global(.empty-screen-image-wrapper) {
+      margin-bottom: 0;
+      margin-right: 2rem;
+      & img {
+        height: 10rem;
+      }
+    }
+    & :global(.empty-screen-title) {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+      align-items: flex-start;
+      font-size: $textExtraLarge;
+      padding-top: 1rem;
+      & small {
+        font-size: $textDefault;
+        color: $textGrey;
+      }
+    }
+  }
+}

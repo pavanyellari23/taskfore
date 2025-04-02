@@ -1,0 +1,37 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.data-grid-container .data-grid.data-sheet) {
+    & :global(.table-view-thead .row:first-child) {
+      & :global(.action-cell:first-child) {
+        min-width: 26rem;
+      }
+
+      & :global(th:last-child) {
+        border-top-right-radius: 1rem;
+      }
+    }
+
+    & :global(.value-viewer-inline) {
+      align-items: center;
+      display: flex;
+      height: 7rem;
+      justify-content: center;
+      width: 7rem;
+    }
+
+    & :global(.cell .title-row-wrap) {
+      & :global(.row-designation-child) {
+        text-transform: capitalize !important;
+      }
+
+      &:global(.switch-group-view) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  & :global(.ref-wrapper) {
+    margin-bottom: 0;
+  }
+}

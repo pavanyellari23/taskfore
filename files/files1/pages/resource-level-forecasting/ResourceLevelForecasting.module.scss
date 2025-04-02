@@ -1,0 +1,353 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.perfect-scrollbar-element) {
+    margin-bottom: 0 !important;
+  }
+
+  & .breadcrumb {
+    & :global(.MuiButton-contained.primary-invert) {
+      height: 4rem;
+      min-width: auto;
+      padding: 0 !important;
+      width: 4rem;
+
+      & :global(.MuiButton-label) {
+        & svg {
+          color: $dark;
+          height: 2rem;
+          margin: 0;
+          stroke-width: 1px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  & .tab-container {
+    background-color: rgba($light, 0.5);
+    margin: -2rem -4.015rem 3.5rem;
+    padding: 0 4.015rem;
+
+    & :global(.forecast-opp-level-tab) {
+      & :global(.MuiButtonBase-root) {
+        margin-right: 3rem;
+        opacity: 1;
+
+        & :global(.MuiTab-wrapper) {
+          color: $textDark;
+        }
+      }
+
+      & :global(.MuiTab-root) {
+        &:global(.Mui-selected .MuiTab-wrapper) {
+          color: $primaryMain;
+        }
+      }
+
+      & :global(.MuiTabs-indicator) {
+        background-color: $primaryMain;
+      }
+    }
+  }
+
+  & .secondary-action {
+    gap: 2rem;
+  }
+
+  & .sub-label {
+    cursor: pointer;
+
+    & .expand-icon {
+      border: 1px solid $borderDefaultTwo;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+
+      & svg {
+        color: $borderDefaultTwo;
+        height: 100%;
+        transition: all ease-in-out 0.25s;
+        width: 100%;
+      }
+
+      &.rotated {
+        & svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &:hover {
+      color: $primaryMain;
+
+      & .expand-icon {
+        border-color: $primaryMain;
+
+        & svg {
+          color: $primaryMain;
+        }
+      }
+    }
+  }
+
+  & .forecast-summary {
+    margin-top: -2rem;
+    position: relative;
+
+    & .data-wrapper {
+      gap: 8rem;
+      padding: 0 3rem;
+
+      & :global(.info-tooltip-global) {
+        height: 2.25rem;
+      }
+    }
+
+    & .collapse-area {
+      margin: 2rem -2rem -2rem;
+      opacity: 0;
+      padding: 0 5rem;
+      position: absolute;
+      transition: all ease-in-out 0.75s;
+      width: 100%;
+      z-index: 5;
+
+      &:global(.MuiCollapse-entered) {
+        background-color: $light;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        opacity: 1;
+        padding: 2rem 5rem;
+      }
+
+      & .collapse-wrapper {
+        background-color: rgba($secondary, 0.2);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow: 10px 10px 25px rgba($dark, 0.05);
+        margin: -2rem -5rem;
+        padding: 2rem 5rem;
+
+        & :global(.table-view-thead) {
+          & :global(.cell) {
+            &:first-child {
+              border-radius: 1rem 0 0 1rem !important;
+            }
+
+            &:last-child {
+              border-radius: 0 1rem 1rem 0 !important;
+            }
+          }
+        }
+
+        & tbody {
+          & :global(.blank-space) {
+            &:global(.read-only) {
+              border-color: $transparent;
+            }
+          }
+
+          & :global(.data-row) {
+            &:nth-child(2) {
+              & :global(.cell) {
+                &:first-child {
+                  border-top-left-radius: 1rem;
+                }
+
+                &:last-child {
+                  border-top-right-radius: 1rem;
+                }
+              }
+            }
+
+            &:last-child {
+              & :global(.cell) {
+                &:first-child {
+                  border-bottom-left-radius: 1rem;
+                }
+
+                &:last-child {
+                  border-bottom-right-radius: 1rem;
+                  min-width: 10rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.forecast-summary-opened {
+      & :global(.horizontal-summary-global) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+  & .fixed-summary {
+    & :global(.year-chip-global) {
+      bottom: 0;
+      padding-right: 4.5rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    & :global(.expand-icon-global) {
+      display: none;
+    }
+
+    & :global(.sub-label-global) {
+      align-items: flex-start;
+      cursor: default;
+      flex-direction: column;
+
+      &:hover {
+        color: $textDark;
+      }
+
+      & h2 {
+        font-size: $textSpecial;
+      }
+
+      & p {
+        color: $textGrey;
+        font-size: $textSmall;
+      }
+    }
+
+    & :global(.horizontal-summary-global) {
+      background-color: rgba($light, 0.8);
+      margin: 0 -4rem;
+      padding: 0 4rem;
+    }
+
+    & :global(.horizontal-summary-outer-wrapper-global) {
+      margin-bottom: 0;
+    }
+
+    & :global(.forecast-summary-global) {
+      margin: -2.95rem -4rem 0;
+    }
+
+    & :global(.fy-global) {
+      border-radius: 0;
+      padding: 1.25rem;
+
+      & h4 {
+        font-size: $textLarge;
+      }
+    }
+
+    & :global(.main-value) {
+      font-size: $textLargeTwo;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    & :global(.main-value-title) {
+      line-height: 1;
+    }
+  }
+
+  & .table-maximize {
+    &:global(.forecasting-table) {
+      margin-top: 0 !important;
+    }
+  }
+
+  & .header-wrapper-expanded {
+    margin-top: 6.5rem;
+  }
+
+  & .fy {
+    background-color: rgba($statusEleven, 0.5);
+    border-radius: 1rem;
+    color: $textGrey;
+    height: 100%;
+    padding: 1.5rem;
+
+    & h4 {
+      font-size: $textLargeTwo;
+    }
+  }
+
+  & :global(.table-search) {
+    max-width: 40rem;
+
+    & :global(.MuiInputBase-root) {
+      &:global(.MuiOutlinedInput-root) {
+        &:global(.MuiInputBase-formControl) {
+          background-color: $light;
+          border-radius: 2.5rem !important;
+          display: flex;
+          flex-direction: row-reverse;
+          padding: 0;
+
+          & :global(.MuiOutlinedInput-input) {
+            padding-left: 1rem;
+          }
+        }
+      }
+
+      & :global(.MuiInputAdornment-root) {
+        color: rgba($textGrey, 0.75);
+        padding-left: 0.5rem;
+
+        & svg {
+          color: rgba($textGrey, 0.75);
+        }
+      }
+    }
+
+    & :global(.MuiFormLabel-root) {
+      color: rgba($textGrey, 0.75);
+      padding-left: 2.5rem;
+
+      &:global(.MuiInputLabel-shrink) {
+        padding-left: 1.6rem;
+        transform: translate(1rem, -0.6rem) scale(1) !important;
+      }
+    }
+  }
+}
+
+.tooltip-content {
+  & h4 {
+    font-size: $textSpecial;
+  }
+
+  & p {
+    color: $secondary;
+    font-size: $textDefault;
+  }
+}
+
+.project-info-tooltip {
+  &:global(.main-tooltip) {
+    margin-top: 2rem;
+    min-width: 30rem;
+  }
+
+  & .project-info-lists {
+    & li {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      & h4 {
+        font-size: $textLarge;
+        font-weight: $fontRegular !important;
+        margin-bottom: 0.275rem;
+      }
+
+      & p {
+        color: rgba($light, 0.75);
+        font-size: $textSmall;
+        font-weight: $fontRegular !important;
+      }
+    }
+  }
+}

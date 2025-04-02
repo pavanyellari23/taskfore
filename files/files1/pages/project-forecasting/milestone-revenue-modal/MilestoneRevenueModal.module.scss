@@ -1,0 +1,105 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  border-radius: 1rem;
+  margin: auto 4rem;
+  max-height: calc(100vh - 80px);
+
+  & :global(.perfect-scrollbar-element) {
+    margin-bottom: 4rem !important;
+  }
+
+  & .action-wrapper {
+    background-color: $light;
+
+    & .info-alert {
+      border: 1px solid $secondary;
+    }
+  }
+
+  & .table-wrapper {
+    & .poc-table-wrapper {
+      & .heading {
+        color: $textPrimary;
+        margin: 3rem 0 -1rem;
+      }
+
+      & .input-wrap {
+        max-width: 108rem;
+      }
+    }
+  }
+
+  & :global(.MuiPaper-rounded) {
+    border-radius: 1rem;
+  }
+
+  &:global(.main-modal.snap-modal-wrap .MuiDialogContent-root) {
+    overflow: auto;
+  }
+
+  & :global(.scrollbar-container) {
+    &::-webkit-scrollbar-track {
+      border-radius: 2rem;
+    }
+
+    & :global(.custom-wrapper.data-grid) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  /* stylelint-disable */
+  &:global(.main-modal .ps__rail-x) {
+    display: block;
+    top:16rem;
+    z-index: 2;
+  }
+
+  & :global(.table-search) {
+    margin-top: 3rem;
+  }
+}
+
+.modal-inside {
+  &:global(.main-modal.snap-modal-wrap) {
+    & :global(.MuiDialog-paper) {
+      border-left: 1px solid $secondary;
+      border-radius: 0 1rem 1rem 0;
+      box-shadow: none !important;
+    }
+  }
+
+  .revenue-modal {
+    margin-left: 0;
+  }
+
+  & :global(.data-grid-container .data-grid.data-sheet) {
+    & :global(.table-view-thead .row:first-child) {
+      & :global(.action-cell:first-child) {
+        min-width: 26rem;
+      }
+
+      & :global(th:last-child) {
+        border-top-right-radius: 1rem;
+      }
+    }
+
+    & :global(.cell .title-row-wrap .row-designation-child) {
+      text-transform: capitalize !important;
+    }
+  }
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+// stylelint-disable selector-no-qualifying-type
+input[type='number'] {
+  appearance: textfield;
+}

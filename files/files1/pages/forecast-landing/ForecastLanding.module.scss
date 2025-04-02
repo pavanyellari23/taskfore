@@ -1,0 +1,71 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .tab-container {
+    align-items: center;
+    background-color: rgba($light, 0.5);
+    display: flex;
+    justify-content: space-between;
+    margin: -2rem calc(-2.5rem + -20px) 2.5rem;
+    padding: 0 calc(2.5rem + 20px);
+    width: calc(100vw + 5px);
+    & .currency-wrap {
+      align-items: center;
+      color: $textGrey;
+      display: flex;
+      gap: 0.5rem;
+
+      & svg {
+        font-size: $textLargeTwo;
+      }
+    }
+
+    & :global(.forecast-opp-level-tab) {
+      & :global(.MuiButtonBase-root) {
+        margin-right: 3rem;
+        opacity: 1;
+
+        & :global(.MuiTab-wrapper) {
+          color: $textDark;
+        }
+      }
+
+      & :global(.MuiTab-root) {
+        &:global(.Mui-selected .MuiTab-wrapper) {
+          color: $primaryMain;
+        }
+      }
+
+      & :global(.MuiTabs-indicator) {
+        background-color: $primaryMain;
+      }
+    }
+  }
+
+  & .empty-screen {
+    background-color: $light;
+    border-radius: 1rem;
+    padding: 21rem 0;
+
+    @include xxl {
+      padding: 18rem 0;
+    }
+
+    & :global(.empty-screen-image) {
+      height: 10.8rem;
+    }
+  }
+}
+
+.no-opportunity-card {
+  background-color: $light;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding: 20rem 0;
+}
+
+.billing-missing {
+  & :global(.confirmation-modal-text) {
+    color: $textDark;
+  }
+}

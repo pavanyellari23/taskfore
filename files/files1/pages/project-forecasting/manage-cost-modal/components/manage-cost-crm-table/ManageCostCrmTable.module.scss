@@ -1,0 +1,19 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead .header-secondary .action-cell) {
+    &:first-child {
+      font-weight: $fontMedium !important;
+    }
+
+    &:nth-child(2) {
+      border-right: 1px solid $borderDefault;
+    }
+  }
+
+  & :global(.cell .title-row-wrap) {
+    & :global(.row-designation-child) {
+      text-transform: unset !important;
+    }
+  }
+}

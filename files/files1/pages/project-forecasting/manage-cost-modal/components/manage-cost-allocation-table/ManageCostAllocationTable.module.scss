@@ -1,0 +1,150 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  table {
+    margin-bottom: 1rem;
+
+    & :global(.row-sub-name-parent) {
+      color: $textDark;
+      font-size: 1.4rem;
+    }
+
+    & :global(.row-designation-child) {
+      margin-right: 0.5rem;
+      max-width: 22rem;
+    }
+
+    & :global(.role-info-icon) {
+      & :global(svg) {
+        margin: 0;
+      }
+    }
+
+    & :global(.copy-right-icon) {
+      & :global(svg) {
+        color: $statusFour;
+        margin-left: 0;
+      }
+    }
+
+    & :global(.title-row-wrap) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & .cell-title {
+        display: flex;
+        gap: 0.5rem;
+
+        &.new-resource .row-designation-child {
+          color: $statusFour;
+        }
+
+        &.new-role .row-designation-child {
+          color: $statusTwo;
+        }
+      }
+    }
+
+    & :global(.cell .title-row-wrap .cell-title) {
+      display: flex;
+      gap: 0.5rem;
+
+      &:global(.new-resource) {
+        & :global(.row-designation-child) {
+          color: $statusTwo;
+        }
+      }
+
+      &:global(.new-role) {
+        & :global(.row-designation-child) {
+          color: $statusFour;
+        }
+      }
+    }
+
+    & :global(.cell-title) {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+  & :global(.data-grid-container .data-grid .cell .title-row-wrap),
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space .title-role > div) {
+    padding-left: 5rem;
+  }
+
+  & :global(.data-row:not(.row-gap-space)) {
+    border-bottom: 4px solid $borderDefault;
+  }
+
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td > div),
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td > span) {
+    padding: 0;
+  }
+
+  /* stylelint-disable-next-line */
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space .title-row-wrap .row-designation-child) {
+    text-transform: unset;
+  }
+  /*stylelint-disable */
+  & :global(.ps__rail-x),
+  & :global(.ps__rail-y) {
+    z-index: 5;
+  }
+
+  tr .data-row .row-gap-space .title-row-wrap .row-designation-child {
+    text-transform: unset !important;
+  }
+
+  & :global(.value-viewer-inline) {
+    align-items: center;
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    width: 7rem;
+  }
+
+  & .no-opportunity-card {
+    padding: 15rem 0;
+
+    @include xxl {
+      padding: 10rem 0;
+    }
+  }
+
+  & :global(.custom-wrapper .blank-space) {
+    height: 0 !important;
+  }
+
+  & .btn-recalculate {
+    visibility: hidden;
+  }
+
+  & :global(.cell .title-row-wrap) {
+    & :global(.row-designation-child) {
+      text-transform: unset !important;
+    }
+  }
+
+  * :global(.table-view-thead) {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td) {
+    padding: 0.5rem 0 0 0;
+  }
+}
+
+.modal-inside {
+  & :global(.main-modal.snap-modal-wrap) {
+    & :global(.MuiDialog-paper) {
+      border-left: 1px solid $secondary;
+      border-radius: 0 1rem 1rem 0 !important;
+      box-shadow: none !important;
+    }
+  }
+}
