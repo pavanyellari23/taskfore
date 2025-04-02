@@ -1,0 +1,45 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    & > :global(.scrollbar-container) {
+      height: calc(100vh - 23.5rem);
+      padding: 4rem 3.5rem;
+    }
+  }
+
+  & .confirmation-message {
+    text-align: center;
+
+    & .confirmation-title {
+      color: $dark;
+      font-size: $textExtraLarge;
+      margin-bottom: 1.5rem;
+    }
+
+    & .confirmation-desc {
+      color: $textGrey;
+    }
+
+    & .rounded-icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 2.5rem;
+
+      & svg {
+        color: $dark;
+        height: 4rem !important;
+        width: 4rem !important;
+
+        & circle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .error-message {
+    margin: -2rem 0 2rem;
+  }
+}

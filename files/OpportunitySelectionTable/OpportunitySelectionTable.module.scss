@@ -1,0 +1,499 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  margin-top: 0.25rem;
+  margin-bottom: 10rem;
+
+  & :global(.MuiTable-root) {
+    border-radius: 0;
+  }
+
+  & :global(.MuiTableHead-root) {
+    border-radius: 1rem;
+
+    & :global(.MuiTableSortLabel-root) {
+      color: $primaryMain;
+      display: block;
+    }
+
+    & :global(.MuiTableCell-root) {
+      padding: 0 !important;
+
+      & :global(.cell-header) {
+        background-color: $secondary;
+        padding: 2.325rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+
+        &:global(.check-box) {
+          padding-left: 4rem;
+        }
+      }
+
+      &:first-child {
+        & :global(.cell-header) {
+          border-bottom-left-radius: 1rem;
+          border-top-left-radius: 1rem;
+          padding-left: 3rem;
+        }
+      }
+
+      &:last-child {
+        & :global(.cell-header) {
+          border-bottom-right-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  & :global(.MuiTableRow-root) {
+    &:hover {
+
+      & :global(.snap-checkbox-wrap input),
+      & :global(.snap-checkbox-wrap .MuiSvgIcon-root) {
+        visibility: visible;
+      }
+    }
+
+    & :global(.snap-checkbox-wrap input:checked),
+    & :global(.snap-checkbox-wrap input:checked + .MuiSvgIcon-root) {
+      visibility: visible;
+    }
+
+    & :global(.MuiTableCell-root:first-child) {
+
+      & .clickable-heading,
+      & .un-clickable-heading {
+        border-left: 0.5rem solid $transparent;
+
+        &.failed-border {
+          border-left: 0.5rem solid $statusOne;
+        }
+
+        &.success-border {
+          border-left: 0.5rem solid $statusThree;
+        }
+
+        & :global(.info-tooltip-global) {
+          position: relative;
+          top: 0.5rem;
+          right: -0.5rem;
+
+          & img {
+            height: 2.2rem;
+          }
+        }
+      }
+    }
+
+    & :global(.snap-textbox-wrap .small-textbox-without-label .MuiOutlinedInput-input) {
+      padding: 1rem !important;
+    }
+      &:last-child {
+        &:global(.tableRow) {
+          position: relative;
+          background-color:  rgba($light, 0.5);
+          height: 5rem;
+          &:hover {
+            & :global(.MuiTableCell-root) {
+              background-color: unset;
+            }
+          }
+        }
+      }
+  }
+
+  & :global(.parent-row) {
+    & :global(.MuiTableCell-root) {
+      padding: 0 !important;
+
+      & .clickable-heading {
+        background-color: $light;
+        padding: 1.25rem 2.325rem;
+        display: flex;
+        align-items: center;
+        height: 7.5rem;
+        border-bottom: 1px solid rgba($secondary, 0.5);
+
+        &.checkbox-wrapper {
+          padding-left: 6.5rem;
+        }
+
+        &.group-heading {
+          font-weight: 500 !important;
+
+          & h4 span {
+            max-width: 23rem;
+            font-weight: 500 !important;
+          }
+            & .list-more {
+                background-color: rgba($secondary, 0.3);
+                cursor: pointer;
+                border-radius: 5rem;
+                height: 3rem;
+                width: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+        }
+
+        & .msg-wrapper {
+          margin-left: 4rem;
+
+          & svg {
+            fill: $statusSix;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+
+    &:global(.open) {
+
+      & .border-radius-bottom-left,
+      & .border-radius-bottom-right {
+        border-radius: 0rem;
+      }
+
+      & :global(.MuiTableCell-root) {
+
+        & svg {
+          &:global(.more-icon) {
+            transform: rotate(0deg);
+            transition: transform 5s;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $transparent !important;
+    }
+  }
+
+  & :global(.inner-child-row-last) {
+    & :global(.MuiTableCell-root) {
+      &:first-child {
+        border-bottom-left-radius: 1rem;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 1rem;
+      }
+    }
+  }
+
+  & :global(.inner-child-row.open),
+  :global(.inner-child-row-last.open) {
+    & :global(.MuiTableCell-root) {
+      background-color: rgba($light, 0.5);
+      padding: 0;
+    }
+  }
+
+  & .heading {
+    background-color: $transparent;
+    margin: -16px;
+    padding: 1.6rem 0;
+    color: $textDark;
+    font-size: $textSpecial;
+    font-weight: $fontMedium !important;
+
+    &:hover {
+      background-color: $borderDefault;
+    }
+  }
+
+  & .clickable-heading,
+  & .un-clickable-heading {
+    & h4 {
+      font-size: $textSmall;
+      color: $primaryMain;
+      // margin-bottom: 0.5rem;
+      line-height: 1.2;
+      text-wrap: nowrap;
+
+      & span {
+        max-width: 18rem;
+        cursor: pointer;
+      }
+    }
+
+    & .sub-label {
+      font-size: $textExtraSmall;
+      margin-top: 0.5rem;
+    }
+
+    & svg {
+      margin-left: -2.75rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      position: relative;
+
+      &:global(.more-icon) {
+        transform: rotate(180deg);
+        margin-right: 1.2rem;
+        cursor: pointer;
+        margin-left: -1.5rem;
+      }
+
+      &.cross-icon {
+          color: $statusSix;
+          width: 2rem;
+          height: 2rem;
+      }
+    }
+
+    & :global(.snap-tag-wrap) {
+      padding: 0.125rem 0.45rem;
+      border-color: $statusThree;
+      margin-left: 0.5rem;
+      background-color: rgba($statusTwo, 0.2);
+      border-radius: 0.4rem;
+
+      & p {
+        font-size: $textExtraSmall;
+        color: $statusTwo;
+        text-wrap: nowrap;
+      }
+      &:global(.error-bg) {
+        background-color: rgba($statusOne, 0.2);
+        color: $statusOne;
+        & p {
+          color: $statusOne;
+        }
+      }
+    }
+
+    &.border-radius-top-left {
+      border-top-left-radius: 1rem;
+    }
+
+    &.border-radius-top-right {
+      border-top-right-radius: 1rem;
+    }
+
+    &.border-radius-bottom-left {
+      border-bottom-left-radius: 1rem;
+    }
+
+    &.border-radius-bottom-right {
+      border-bottom-right-radius: 1rem;
+    }
+  }
+
+
+  & .un-clickable-heading {
+    display: flex;
+    padding: 1.25rem 3rem;
+
+    & h4,
+    & .sub-label {
+      margin-left: 0;
+    }
+
+    & h4 {
+      max-width: 20rem;
+    }
+
+    &.checkbox-wrapper {
+      padding-left: 6.5rem;
+    }
+  }
+
+  & :global(.tableRow) {
+    background-color: $borderDefault;
+
+    &:hover {
+      background-color: $borderDefault;
+
+      & :global(.MuiTableCell-root) {
+        background-color: $borderDefault;
+      }
+    }
+
+    & :global(.MuiTableCell-root) {
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $borderDefault;
+      }
+    }
+  }
+
+  & :global(.snap-checkbox-wrap) {
+    margin-left: -2.5rem;
+
+    & input,
+    :global(.MuiSvgIcon-root) {
+      visibility: hidden;
+    }
+
+    & svg {
+      margin-left: 0;
+    }
+
+    & :global(.MuiIconButton-root:hover) {
+      background-color: $transparent;
+    }
+
+    & :global(.MuiTouchRipple-root) {
+      display: none;
+    }
+
+    & :global(.snap-checkbox) {
+      padding: 0.9rem;
+    }
+  }
+
+  & :global(.MuiTableContainer-root) {
+    max-height: 61vh;
+    position: relative;
+
+    & :global(.MuiTable-root) {
+      overflow: auto;
+
+      & :global(.MuiTableHead-root) {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($textGrey, 0.35);
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: rgba($textDark, 0.1);
+  }
+
+  & :global(.snap-textbox-wrap .small-textbox-without-label .MuiOutlinedInput-input) {
+    padding: 1.2rem !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  & :global(.InfoTooltip-module_wrapper__1tSmQ svg) {
+    margin: 0 0.5rem !important;
+  }
+
+  & :global(.MuiTableRow-root) {
+    &:last-child {
+      &:global(.tableRow) {
+        background-color: rgba($light, 0.5);
+        height: 5rem;
+        position: relative;
+
+        &:hover {
+          & :global(.MuiTableCell-root) {
+            background-color: unset;
+          }
+        }
+      }
+    }
+
+    & :global(.load-more-wrap) {
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      & :global(.more) {
+        color: $primaryMain;
+        cursor: pointer;
+        margin-block: 1.5rem;
+        text-align: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  & .heading-dummy{
+    background-color: black;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  color: $textGrey;
+  cursor: pointer;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  &>span {
+    display: block;
+    width: 4rem;
+    text-align: center;
+    padding: 0.75rem 0;
+
+    & svg {
+      margin: auto !important;
+    }
+  }
+
+  & .dropdown-window {
+    width: 300px;
+    position: absolute;
+    background-color: $light;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 1rem;
+    box-shadow: 0 0.3rem 0.6rem rgba($dark, 0.16);
+    width: 8rem;
+  }
+
+  &:hover {
+    & .dropdown-window {
+      opacity: 1;
+    }
+  }
+
+  & :global(.chip-wrapper) {
+    & :global(.snap-tag-wrap) {
+      padding: 0;
+    }
+  }
+}
+
+.action-tooltip {
+  &:global(.main-tooltip.MuiTooltip-tooltip.main-tooltip) {
+    max-width: 10rem !important;
+    padding: 1.5rem;
+
+    & ul li {
+      cursor: pointer;
+    }
+  }
+}
+
+.info-tooltip {
+  & p {
+    color: $secondary;
+    margin-bottom: 1rem;
+  }
+
+  & li {
+    margin-bottom: 0.3rem;
+
+    & :global(.title) {
+      font-size: $textSpecial;
+    }
+    & :global(.sub-title) {
+      color: $secondary;
+    }
+  }
+}

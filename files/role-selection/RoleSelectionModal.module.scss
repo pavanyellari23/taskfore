@@ -1,0 +1,104 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    & > :global(.scrollbar-container) {
+      height: calc(100vh - 23.5rem);
+      padding: 4rem 3.5rem;
+    }
+
+    & :global(.MuiFormControl-root) {
+      background-color: $light;
+    }
+
+    & .designation {
+      color: $textDark;
+      font-size: $textDefault;
+      font-weight: $fontMedium !important;
+      line-height: 1;
+
+      & .org-role-label {
+        text-transform: uppercase;
+        font-weight: $fontMedium !important;
+      }
+
+      & small {
+        color: $textGrey;
+        display: block;
+        font-size: $textDefault !important;
+        font-weight: $fontRegular;
+        margin-top: 0.5rem;
+        text-transform: capitalize;
+      }
+      
+      & .bar-space {
+        margin-inline: 0.5rem;
+        color:  rgba($textGrey, 0.5);
+      }
+    }
+  }
+
+  & .confirmation-message {
+    text-align: center;
+
+    & .confirmation-title {
+      color: $dark;
+      font-size: $textExtraLarge;
+      margin-bottom: 1.5rem;
+    }
+
+    & .confirmation-desc {
+      color: $textGrey;
+    }
+
+    & .rounded-icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 2.5rem;
+
+      & svg {
+        color: $dark;
+        height: 4rem !important;
+        width: 4rem !important;
+
+        & circle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .error-message {
+    padding-top: 0;
+  }
+
+  & .role-info {
+    background-color: rgba($secondary, 0.5);
+    padding: 3rem;
+    border-radius: 1rem;
+
+    & .value {
+      & h4 {
+        font-size: $textSpecial;
+        color: $textDark;
+        margin-bottom: 0.5rem;
+      }
+
+      & p {
+        color: $textGrey;
+      }
+    }
+
+    & .role-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
+}

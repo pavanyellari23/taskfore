@@ -1,0 +1,95 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  margin: 2rem -1rem -1rem;
+
+  & .comment-label {
+    color: $textGrey;
+    margin: 0 1rem;
+  }
+
+  & :global(.MuiFormLabel-root) {
+    color: $primaryMain !important;
+    font-size: $textDefault;
+    padding-right: 0.5rem;
+    transform: translate(1.5rem, 2rem) scale(1);
+
+    &:global(.MuiInputLabel-shrink) {
+      transform: translate(1.5rem, -0.6rem) scale(1) !important;
+      transition: 0.25s all ease-in-out;
+    }
+  }
+
+  & :global(.MuiOutlinedInput-notchedOutline) {
+    legend {
+      font-size: $textSpecial;
+
+      & span {
+        padding: 0;
+      }
+    }
+  }
+
+  & :global(.Mui-focused) {
+    border-color: $primaryMain !important;
+
+    & :global(.MuiOutlinedInput-notchedOutline) {
+      border-color: $primaryMain !important;
+      border-width: 1px !important;
+    }
+
+    &:global(.MuiFormLabel-root) {
+      color: $primaryMain !important;
+    }
+  }
+
+  & :global(.MuiOutlinedInput-root) {
+    &:hover {
+      & :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $textMidGray;
+      }
+    }
+
+    & :global(.MuiOutlinedInput-notchedOutline) {
+      border-color: $textMidGray;
+    }
+  }
+
+  & :global(.MuiInputBase-root) {
+    padding: 0;
+
+    textarea {
+      font-size: $textSmall;
+      line-height: 1;
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  & .icon-wrapper {
+    cursor: pointer;
+
+    & svg {
+      color: $textGrey;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  & .submitted-text {
+    color: $textDark;
+    margin: 2rem 1rem;
+  }
+
+  & .noneditable-content {
+    color: $textGrey;
+    margin: 1rem 1rem 0;
+  }
+
+  & .plus-icon {
+    cursor: pointer;
+  }
+
+  & :global(.MuiFormHelperText-root.Mui-error) {
+    font-size: 1.2rem;
+  }
+}

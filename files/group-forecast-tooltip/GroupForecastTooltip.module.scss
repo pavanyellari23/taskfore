@@ -1,0 +1,21 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.project-info-lists {
+      & li {
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+  
+        & h4 {
+          font-size: $textLarge;
+          font-weight: $fontRegular !important;
+          margin-bottom: 0.275rem;
+        }
+  
+        & p {
+          color: rgba($light, 0.75);
+          font-size: $textSmall;
+          font-weight: $fontRegular !important;
+        }
+      }
+}

@@ -1,0 +1,52 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.search-info {
+  color: $textGrey;
+  height: 2rem;
+  margin-left: 0.8rem;
+  width: 2rem;
+}
+
+.wrapper {
+  width: 40rem;
+
+  :global(.snap-textbox-wrap.outlined .table-search) {
+    background-color: unset !important;
+    max-width: 40rem;
+
+    & :global(.MuiInputBase-root) {
+      &:global(.MuiOutlinedInput-root) {
+        &:global(.MuiInputBase-formControl) {
+          background-color: $light;
+          border-radius: 2.5rem !important;
+          display: flex;
+          flex-direction: row-reverse;
+          padding: 0;
+
+          & :global(.MuiOutlinedInput-input) {
+            padding-left: 1rem;
+          }
+        }
+      }
+
+      & :global(.MuiInputAdornment-root) {
+        color: rgba($textGrey, 0.75);
+        padding-left: 0.5rem;
+
+        & svg {
+          color: rgba($textGrey, 0.75);
+        }
+      }
+    }
+
+    & :global(.MuiFormLabel-root) {
+      color: rgba($textGrey, 0.75);
+      padding-left: 2.5rem;
+
+      &:global(.MuiInputLabel-shrink) {
+        background-color: unset !important;
+        transform: translate(0.5rem, -0.6rem) scale(1) !important;
+      }
+    }
+  }
+}

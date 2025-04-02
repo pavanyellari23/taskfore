@@ -1,0 +1,199 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  position: relative;
+
+  & .calendar {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    & .calendar-item {
+      align-items: center;
+      background-color: $light;
+      border-radius: 5rem;
+      display: inline-flex;
+      font-size: $textExtraSmall;
+      min-height: 3.5rem;
+      overflow: hidden;
+
+      @include xxl {
+        min-width: 17.5rem;
+      }
+
+      & .period {
+        align-items: center;
+        background-color: $primaryMain;
+        color: $light;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        margin-right: 1.5rem;
+        min-height: 3.5rem;
+        min-width: 5rem;
+        padding: 0.8rem 1.5rem;
+        text-align: center;
+        text-transform: none;
+      }
+
+      & .date {
+        color: $textDark;
+        padding-right: 2rem;
+      }
+    }
+
+    & .total-month {
+      margin: 1rem 2rem;
+      min-width: 16rem;
+
+      & .months {
+        color: $dark;
+        font-size: $textExtraSmall;
+        margin: auto;
+        max-width: 5rem;
+        text-align: center;
+      }
+    }
+
+    &.solid-bg {
+      & .calendar-item {
+        background-color: $secondary;
+
+        & .period {
+          background-color: $statusFour;
+        }
+      }
+
+      & .months {
+        color: $light;
+      }
+    }
+
+    &.disable-cursor {
+      cursor: auto;
+    }
+  }
+
+  & :global(.snap-calendar-container) {
+    width: 58.4rem;
+    z-index: 99;
+
+    & :global(.snap-calendar-wrapper) {
+      box-shadow: 0 3px 16px rgba($dark, 0.1);
+      left: 0;
+      margin: auto;
+      right: 0;
+      top: 2.5rem;
+
+      /* stylelint-disable */
+      & :global(.react-calendar) {
+        & :global(.react-calendar__viewContainer) {
+          & :global(.react-calendar__month-view__days) {
+            & :global(.react-calendar__tile) {
+              background-color: rgba($primaryMain, 0.1);
+              min-width: 3.6rem !important;
+              padding: 0.58rem;
+              width: 3.6rem !important;
+
+              &:global(.react-calendar__month-view__days__day) {
+                &:global(.react-calendar__month-view__days__day--neighboringMonth) {
+                  background-color: rgba($primaryMain, 0);
+                }
+              }
+
+              &:global(.react-calendar__tile) {
+                &:global(.react-calendar__tile--active) {
+                  background-color: rgba($primaryMain, 1);
+                }
+              }
+            }
+          }
+
+          & :global(.react-calendar__month-view) {
+            & > div {
+              & > div {
+                flex-grow: 1;
+                padding: 2rem 2rem 3rem;
+                width: calc(100% + 4rem);
+              }
+            }
+          }
+        }
+      }
+
+      & :global(.react-calendar__month-view__weekdays__weekday) {
+        color: $textGrey !important;
+        font-size: $textExtraSmall !important;
+        min-width: 3.6rem !important;
+        padding: 0.7rem 0 0.25rem;
+
+        & abbr {
+          font-weight: $fontMedium !important;
+        }
+      }
+      & :global(.react-calendar__navigation) {
+        background-color: $primaryMain;
+        color: $light;
+        padding: 0 2rem;
+
+        & :global(.react-calendar__navigation__label__labelText) {
+          color: $light !important;
+        }
+
+        &:hover {
+          background-color: $primaryMain;
+        }
+
+        & :global(.react-calendar__navigation__arrow) {
+          color: $light;
+        }
+      }
+      /* stylelint-enable */
+
+      & :global(.react-calendar),
+      & :global(.calendar-action-container) {
+        background-color: $light;
+      }
+
+      & :global(.calendar-action-container) {
+        display: none;
+      }
+
+      &::after {
+        background: url('../../../assets/images/callout-pointer.svg');
+        background-size: cover;
+        content: '';
+        height: 1rem;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: -0.9rem;
+        transform: rotate(180deg);
+        width: 3.25rem;
+      }
+    }
+
+    & :global(.snap-calendar-range-wrapper) {
+      & :global(.snap-calendar-range) {
+        width: 29.2rem;
+
+        /* stylelint-disable */
+        &:nth-child(1) {
+          & :global(.react-calendar__viewContainer) {
+            padding: 0;
+          }
+        }
+
+        &:nth-child(2) {
+          & :global(.react-calendar__viewContainer) {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  }
+  

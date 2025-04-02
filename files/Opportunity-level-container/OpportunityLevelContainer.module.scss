@@ -1,0 +1,42 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .secondary-action {
+    gap: 2rem;
+    margin-bottom: 1rem !important;
+  }
+
+  & .search-result {
+    color: $textGrey;
+    margin-bottom: 1.5rem;
+
+    strong {
+      color: $textDark;
+      font-weight: $fontMedium !important;
+    }
+  }
+}
+
+.opportunity-button-tooltip {
+  padding: 0 !important;
+
+  & :global(.menu-item) {
+    align-items: center;
+    border-top: 0.1rem solid rgba($light, 0.1);
+    color: $textLight;
+    cursor: pointer;
+    display: flex;
+    font-size: $textDefault;
+    min-height: 5.4rem;
+    padding: 1rem 2rem;
+
+    &:hover {
+      background-color: $secondaryLighterThree;
+    }
+  }
+}
+
+:global(.MuiTooltip-popper):has(.opportunity-button-tooltip) {
+  z-index: 1300 !important;
+}
+

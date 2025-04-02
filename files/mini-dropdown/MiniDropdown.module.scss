@@ -1,0 +1,116 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+$dropdown-padding: 0.6rem 1rem;
+$dropdown-min-width: 15.6rem;
+$border-radius: 0.5rem;
+$border-color: rgba($statusFour, 0.025);
+$hover-bg-color: rgba($statusFour, 0.2);
+$bg-color: rgba($statusFour, 0.1);
+$single-item-bg-color: rgba($secondary, 0.2);
+$single-item-border-color: rgba($secondary, 0.2);
+$not-selected-border-color: rgba($statusFour, 0.5);
+
+@mixin transition($property, $duration, $timing) {
+  transition: #{$property} #{$duration} #{$timing};
+}
+
+@mixin border-radius($tl, $tr, $br, $bl) {
+  border-radius: #{$tl} #{$tr} #{$br} #{$bl};
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  .dropdown-button {
+    @include border-radius($border-radius, $border-radius, $border-radius, $border-radius);
+
+    align-items: center;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    display: flex;
+    font-size: $textDefault;
+    justify-content: space-between;
+    padding: $dropdown-padding;
+    width: $dropdown-min-width;
+
+    &.open {
+      @include border-radius($border-radius, $border-radius, 0, 0);
+    }
+
+    &:hover {
+      background-color: $hover-bg-color;
+    }
+
+    &.single-item {
+      background-color: $single-item-bg-color;
+      border: 1px solid $single-item-border-color;
+      cursor: default;
+    }
+
+    &.not-selected {
+      background-color: $transparent;
+      border: 1px solid $not-selected-border-color;
+      color: $textGrey;
+
+      &:hover {
+        border-color: $statusFour;
+      }
+    }
+
+    .arrow {
+      @include transition(transform, 0.3s, ease-in-out);
+
+      color: $textGrey;
+      height: 1.5rem;
+      margin-bottom: 0 !important;
+      margin-left: 0.5rem;
+      width: 1.5rem;
+    }
+
+    &.open .arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .dropdown-content {
+    @include border-radius(0, 0, $border-radius, $border-radius);
+
+    background-color: $light;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: $dropdown-min-width;
+    z-index: 8;
+
+    &.show {
+      display: block;
+      width: 100%;
+    }
+
+    .dropdown-item {
+      background-color: $bg-color;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        background-color: $hover-bg-color;
+      }
+    }
+  }
+
+  &.top {
+    .dropdown-content {
+      bottom: 100%;
+      z-index: 999;
+    }
+
+    .dropdown-button {
+      &.open {
+        @include border-radius(0, 0, $border-radius, $border-radius);
+      }
+    }
+  }
+}

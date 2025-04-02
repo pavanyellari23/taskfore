@@ -1,0 +1,35 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.modal-content) {
+    & > :global(.scrollbar-container) {
+      height: calc(100vh - 23.5rem);
+      padding: 4rem 3.5rem;
+    }
+  }
+
+  & .value-wrapper {
+    background-color: rgba($secondary, 0.5);
+    border-radius: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+
+    & .value {
+      & h4 {
+        color: $textDark;
+        font-size: $textSpecial;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  & .label {
+    color: $textDark;
+  }
+
+  & :global(.snap-textbox-wrap) {
+    max-width: 23rem;
+  }
+}
