@@ -1,0 +1,98 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & .button-wrapper {
+    margin-top: -5rem;
+  }
+
+  & :global(.header-secondary .snap-button-wrap:nth-child(2)) {
+    display: none;
+  }
+
+  & :global(.row-sub-name-parent) {
+    color: $textDark;
+    font-size: 1.4rem;
+    font-weight: $fontMedium !important;
+  }
+
+  & :global(.data-grid-container .data-grid .data-row) {
+    & :global(.cell .title-row-wrap .row-designation-child) {
+      font-weight: 400 !important;
+      text-transform: unset;
+    }
+
+    &:nth-child(4),
+    &:global(.last-row) {
+      & :global(.cell .title-row-wrap .row-designation-child) {
+        font-weight: 500 !important;
+      }
+    }
+  }
+
+  & :global(.data-row.first-row.last-row) {
+    & :global(.title-btn-box) {
+      padding: 0;
+    }
+
+    & :global(:not(button):first-child) {
+      border-radius: unset !important;
+    }
+
+    & :global(:not(button):last-child) {
+      border-radius: unset !important;
+    }
+
+    & :global(.title-row-wrap) {
+      padding: 0;
+    }
+
+    & :global(.row-title-text) {
+      background: $tableBgDark;
+      color: $textDark;
+      font-size: 1.4rem;
+      font-weight: 500 !important;
+      padding: 2rem;
+    }
+
+    & :global(.snap-button-wrap) {
+      background-color: $lightOpacity;
+      padding: 3rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  * :global(.table-view-thead) {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td),
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td > div) {
+    padding: 0.5rem 0 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($textGrey, 0.35);
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: rgba($textDark, 0.1);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  & :global(.ps__rail-x) {
+    z-index: 4;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  & :global(.ps__rail-y) {
+    z-index: 4;
+  }
+}

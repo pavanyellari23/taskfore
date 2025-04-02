@@ -1,0 +1,132 @@
+@import '~@pnp-revin/utils/dist/assets/scss/variables.module';
+
+.wrapper {
+  & :global(.row-sub-name-parent) {
+    color: $textDark;
+    font-size: 1.4rem;
+    font-weight: $fontMedium !important;
+  }
+
+  & :global(.row-designation-child) {
+    margin-right: 0.5rem;
+    max-width: 22rem;
+  }
+
+  & :global(.data-grid-container .data-grid .cell .title-row-wrap .row-designation-child) {
+    text-transform: unset;
+  }
+
+  table {
+    margin-bottom: 1rem;
+
+    & :global(.row-sub-name-parent) {
+      color: $textDark;
+      font-size: 1.4rem;
+    }
+
+    & :global(.row-designation-child) {
+      margin-right: 0.5rem;
+      max-width: 22rem;
+    }
+
+    & :global(.role-info-icon) {
+      & :global(svg) {
+        margin: 0;
+      }
+    }
+
+    & :global(.copy-right-icon) {
+      & :global(svg) {
+        color: $statusFour;
+        margin-left: 0;
+      }
+    }
+
+    & :global(.title-row-wrap) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & .cell-title {
+        display: flex;
+        gap: 0.5rem;
+
+        &.new-resource .row-designation-child {
+          color: $statusFour;
+        }
+
+        &.new-role .row-designation-child {
+          color: $statusTwo;
+        }
+      }
+    }
+
+    & :global(.cell .title-row-wrap .cell-title) {
+      display: flex;
+      gap: 0.5rem;
+
+      &:global(.new-resource) {
+        & :global(.row-designation-child) {
+          color: $statusTwo;
+        }
+      }
+
+      &:global(.new-role) {
+        & :global(.row-designation-child) {
+          color: $statusFour;
+        }
+      }
+    }
+
+    & :global(.cell-title) {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    & :global(.row-title-bold) {
+      & :global(.cell .title-row-wrap .row-designation-child) {
+        font-weight: $fontSemiBold !important;
+        text-transform: unset;
+      }
+    }
+  }
+
+  & .button-wrapper {
+    margin-top: -5rem;
+  }
+
+  * :global(.table-view-thead) {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td),
+  & :global(.data-grid-container .data-grid.data-sheet .table-view-thead ~ tbody .row-gap-space td > div) {
+    padding: 0.5rem 0 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($textGrey, 0.35);
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: rgba($textDark, 0.1);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  & :global(.ps__rail-x) {
+    z-index: 4;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  & :global(.ps__rail-y) {
+    z-index: 4;
+  }
+}
